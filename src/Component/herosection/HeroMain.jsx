@@ -5,21 +5,19 @@ import HeroGraidiant from "./HeroGraidiant"; // ✅ Import gradient
 
 const HeroMain = () => {
     return (
-<div className="relative pt-44 md:pt-60 mb-0 md:mb-28 pb-16">
-
+        <div className="relative pt-44 md:pt-44 lg:pt-60 pb-16 md:pb-28">
             {/* Background Gradient */}
             <HeroGraidiant /> {/* ✅ Gradient is inside HeroMain */}
 
-            <div className="flex flex-col-reverse md:flex-row max-w-[1200px] mx-auto justify-between items-center px-4">
+            {/* Main Content Container */}
+            <div className="flex flex-col-reverse md:flex-row max-w-[1550px] mx-auto justify-between items-center px-4 md:px-8 lg:px-12 gap-8 md:gap-0">
                 {/* Hero Text */}
-                <div className="animate-fade-up">
+                <div className="w-full md:w-1/2 animate-fade-up ">
                     <HeroText />
                 </div>
-           <br />
-           <br />
-           <br />
+                <br />
                 {/* Hero Picture */}
-                <div className="animate-fade-up delay-100">
+                <div className="w-full md:w-1/2 animate-fade-up delay-100">
                     <HeroPic />
                 </div>
             </div>
