@@ -3,6 +3,7 @@ import NavbarLogo from "./NavbarLogo";
 import NavbarLinks from "./NavbarLinks";
 import NavbarBtn from "./NavbarBtn";
 import { LuMenu } from "react-icons/lu";
+import { RxCross2 } from "react-icons/rx";
 
 const NavbarMain = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +24,7 @@ const NavbarMain = () => {
       {/* Mobile Menu Button */}
       <div className="lg:hidden sm:block p-6 bg-black rounded-full border border-amber-500">
         <button className="text-2xl p-3 border border-amber-500 rounded-full text-white" onClick={toggleMenu}>
-          <LuMenu />
+         { menuOpen ?<RxCross2 />:<LuMenu/>}
         </button>
       </div>
 
