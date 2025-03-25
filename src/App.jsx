@@ -4,6 +4,8 @@ import HeroMain from "./Component/herosection/HeroMain";
 import SubHerosection from "./Component/herosection/SubHerosection";
 import AboutMain from "./Component/aboutSection/AboutMain";
 import SkillsMain from "./Component/SkillSection/SkillsMain";
+import Projects from "./Component/ProjectSec/Projects";
+import Contact from "./Component/ContectSec/Contact";
  
 
 const App = () => {
@@ -18,6 +20,8 @@ const App = () => {
        <AboutMain />
        </div>
        <SkillsMain />
+       <Projects />
+      <Contact />
     </div>
   );
 };
