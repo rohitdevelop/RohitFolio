@@ -1,21 +1,27 @@
 import React from "react";
 
-const HeroGraidiant = () => {
+const glowConfigs = [
+  { color: "bg-orange-400" },
+  { color: "bg-cyan-400" },
+  { color: "bg-orange-400" },
+  { color: "bg-cyan-400" },
+  { color: "bg-orange-400" },
+  { color: "bg-cyan-400" },
+];
+
+const HeroGradient = () => {
   return (
-    <div className=" ">
-      {/* Top Right Cyan Glow */}
-      <div className="absolute top-0 right-[250px] w-[250px] h-[250px] bg-cyan-400 blur-3xl opacity-50 -z-10 animate-pulse"></div>
-
-      {/* Top Right Orange Glow */}
-      <div className="absolute top-0 right-0 w-[250px] h-[250px] bg-orange-400 blur-3xl opacity-50 -z-10 animate-pulse"></div>
-
-      {/* Bottom Left Cyan Glow */}
-      <div className="absolute top-[300px] left-0 w-[250px] h-[250px] bg-cyan-400 blur-3xl opacity-50 -z-10"></div>
-
-      {/* Bottom Left Orange Glow */}
-      <div className="absolute top-[500px] left-0 w-[250px] h-[250px] bg-orange-400 blur-3xl opacity-50 -z-10"></div>
+    <div className="absolute inset-0 -z-10 flex justify-center">
+<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-16 sm:gap-72 md:gap-72">
+{glowConfigs.map((glow, index) => (
+          <div
+            key={index}
+            className={`w-[120px] h-[120px] sm:w-[180px] sm:h-[180px] md:w-[250px] md:h-[250px] ${glow.color} blur-3xl animate-bounce opacity-70 sm:opacity-70 md:opacity-40`}
+          ></div>
+        ))}
+      </div>
     </div>
   );
 };
 
-export default HeroGraidiant;
+export default HeroGradient;

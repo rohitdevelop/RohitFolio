@@ -23,8 +23,18 @@ const NavbarMain = () => {
 
       {/* Mobile Menu Button */}
       <div className="lg:hidden sm:block p-6 bg-black rounded-full border border-amber-500">
-        <button className="text-2xl p-3 border border-amber-500 rounded-full text-white" onClick={toggleMenu}>
-         { menuOpen ?<RxCross2 />:<LuMenu/>}
+        <button
+          className={`text-2xl p-3 border border-amber-500 rounded-full text-white 
+      transition-all duration-300 ease-in-out 
+      ${
+        menuOpen
+          ? "scale-125 rotate-180 border-cyan-400 shadow-cyan-400 shadow-lg"
+          : "scale-100"
+      }
+      hover:scale-110 hover:border-cyan-300 hover:shadow-md hover:shadow-cyan-500`}
+          onClick={toggleMenu}
+        >
+          {menuOpen ? <RxCross2 /> : <LuMenu />}
         </button>
       </div>
 
@@ -32,12 +42,15 @@ const NavbarMain = () => {
       <div
         className={`absolute top-full left-1/2 -translate-x-1/2 w-full h-auto px-6 py-4 max-w-[450px]
     transition-all duration-500 ease-in-out
-    ${menuOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}
+    ${
+      menuOpen
+        ? "opacity-100 scale-100"
+        : "opacity-0 scale-95 pointer-events-none"
+    }
     bg-[#00FFFF]/20 backdrop-blur-lg rounded-lg shadow-lg border border-[#00FFFF]/30 flex justify-center items-center`}
       >
         <NavbarLinks />
       </div>
-
     </nav>
   );
 };

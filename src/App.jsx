@@ -7,20 +7,17 @@ import SkillsMain from "./Component/SkillSection/SkillsMain";
 import Projects from "./Component/ProjectSec/Projects";
 import Contact from "./Component/ContectSec/Contact";
  
-
 const App = () => {
-  return (
+   return (
     <div className="josefin-sans">
       <main>
         <NavbarMain />
       </main>
       <HeroMain />
-       <SubHerosection />
-       <div>
-       <AboutMain />
-       </div>
-       <SkillsMain />
-       <Projects />
+      <SubHerosection />
+      <AboutMain />
+      <SkillsMain />
+      <Projects />
       <Contact />
     </div>
   );

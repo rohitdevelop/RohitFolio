@@ -28,7 +28,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div id="projects" className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <ProjectsText />
       <div className="mt-12 space-y-24">
         {projects.map((project, index) => (
