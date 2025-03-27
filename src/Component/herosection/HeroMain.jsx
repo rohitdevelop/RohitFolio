@@ -5,7 +5,7 @@ import HeroGraidiant from "./HeroGraidiant"; // ✅ Import gradient
 
 const HeroMain = () => {
     return (
-<div id="home" className="relative pt-44 md:pt-44 lg:pt-60 pb-6 md:pb-20">
+<div id="home" className="relative pt-44 md:pt-44 lg:pt-60 pb-16 md:pb-20">
 {/* Background Gradient */}
             <HeroGraidiant /> 
 
