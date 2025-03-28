@@ -52,7 +52,7 @@ const HeroText = () => {
       </div>
 
       <div className="flex md:block items-center justify-center mt-2 md:mt-4">
-        <button   onClick={() => window.open("https://drive.google.com/drive/my-drive", "_blank")} className="w-40 px-3 py-1.5 text-sm md:text-lg font-semibold text-white bg-orange-500 rounded-md 
+        <button   onClick={() => window.open("https://drive.google.com/file/d/1CR-Ph4nH6Fq_wlA2s33VVVfKDSQ9WeHR/view?usp=drive_link", "_blank")} className="w-40 px-3 py-1.5 text-sm md:text-lg font-semibold text-white bg-orange-500 rounded-md 
           transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 flex items-center justify-center gap-2 group">
           Resume 
           <FaArrowRightLong className="transition-all duration-300 group-hover:ml-2" />
