@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+ import { useNavigate } from "react-router-dom";
+ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -7,33 +8,33 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const stacksArray = ["Frontend Developer", "Backend Developer", "MERN Stack Developer"];
 
 const HeroText = () => {
+  const navigate = useNavigate();
   const [stackIndex, setStackIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  // Typing & Deleting animation
   useEffect(() => {
     const currentStack = stacksArray[stackIndex];
-
     let timeout;
+    
     if (!isDeleting && charIndex < currentStack.length) {
       timeout = setTimeout(() => {
         setCurrentText((prev) => prev + currentStack[charIndex]);
         setCharIndex(charIndex + 1);
-      }, 100); // Typing speed
+      }, 100);
     } else if (isDeleting && charIndex > 0) {
       timeout = setTimeout(() => {
         setCurrentText((prev) => prev.slice(0, -1));
         setCharIndex(charIndex - 1);
-      }, 50); // Deleting speed
+      }, 50);
     } else {
       setTimeout(() => {
         setIsDeleting(!isDeleting);
         if (!isDeleting) {
           setStackIndex((prevIndex) => (prevIndex + 1) % stacksArray.length);
         }
-      }, 1000); // Delay before switching
+      }, 1000);
     }
 
     return () => clearTimeout(timeout);
@@ -41,11 +42,8 @@ const HeroText = () => {
 
   return (
     <div className="flex flex-col gap-4 md:gap-6 justify-center text-center md:text-left md:ml-16 lg:ml-32">
-      {/* Name & Title */}
       <div className="space-y-1 md:space-y-3">
-        <h1 className="font-bold font-special text-white text-3xl md:text-5xl lg:text-6xl">
-          Hi There,
-        </h1>
+        <h1 className="font-bold font-special text-white text-3xl md:text-5xl lg:text-6xl">Hi There,</h1>
         <h1 className="font-bold font-special text-white text-3xl md:text-5xl lg:text-6xl">
           I'm <span className="text-orange-500">Rohit Singh</span>
         </h1>
@@ -55,16 +53,14 @@ const HeroText = () => {
         </h2>
       </div>
 
-      {/* About Me Button */}
       <div className="flex md:block items-center justify-center mt-2 md:mt-4">
-      <button className="w-40 px-3 py-1.5 text-sm md:text-lg font-semibold text-white bg-orange-500 rounded-md 
-  transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 flex items-center justify-center gap-2 group">
-  Resume 
-  <FaArrowRightLong className="transition-all duration-300 group-hover:ml-2" />
-</button>
+        <button  onClick={() => navigate("/resume")} className="w-40 px-3 py-1.5 text-sm md:text-lg font-semibold text-white bg-orange-500 rounded-md 
+          transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 flex items-center justify-center gap-2 group">
+          Resume 
+          <FaArrowRightLong className="transition-all duration-300 group-hover:ml-2" />
+        </button>
       </div>
 
-      {/* Social Icons */}
       <div className="flex flex-wrap justify-center md:justify-start gap-3 md:gap-4 mt-3 md:mt-4">
         {[
           { href: "https://www.linkedin.com/in/rohit-singh-b7777730a/", icon: faLinkedin },
