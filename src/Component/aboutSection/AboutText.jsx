@@ -2,8 +2,8 @@ import React from "react";
 
 const AboutText = () => {
   return (
-    <h1 className="text-cyan-500 underline text-3xl sm:text-4xl md:text-5xl font-bold text-center">
-       👨‍💼 About Me
+    <h1 className="text-cyan-500 text-3xl sm:text-4xl md:text-5xl font-bold text-center">
+       About <span className="text-orange-500">Me</span> 
     </h1>
   );
 };

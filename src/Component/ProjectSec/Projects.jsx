@@ -5,24 +5,38 @@ import ProjectsText from "./ProjectsText";
 const projects = [
   {
     image: "/assets/project1.jpg",
-    title: "Vacation of Africa",
-    date: "Mar 2022",
+    title: "Task Paste App",
+    date: "dec 2024",
     link: "#",
     align: "left",  // Changed to left
+    about: "I use in thise react, tailwind and redux"
   },
   {
     image: "/assets/project2.jpg",
-    title: "Moola App",
-    date: "Sept 2022",
+    title: "WEBDEV Pathshala",
+    date: "march 2025",
     link: "#",
     align: "right",
+    about: "I use in thise react, tailwind and redux"
+
   },
   {
     image: "/assets/project3.jpg",
-    title: "Tourzania",
-    date: "Jan 2023",
+    title: "E-Commmerse",
+    date: "may 2025",
     link: "#",
     align: "left",  // Changed to left
+    about: "I use in thise react, tailwind and redux"
+
+  },
+  {
+    image: "/assets/project3.jpg",
+    title: "GYM web",
+    date: "jun 2025",
+    link: "#",
+    align: "right",  // Changed to left
+    about: "I use in thise react, tailwind and redux"
+
   },
 ];
 
@@ -39,6 +53,7 @@ const Projects = () => {
             link={project.link}
             image={project.image}
             align={project.align}
+            about={project.about}
           />
         ))}
       </div>

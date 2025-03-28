@@ -14,7 +14,7 @@ const AboutMain = () => {
       </div>
 
       {/* Image & Text Container */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-12 w-full">
+      <div className="flex flex-col  md:mt-12 md:mb-12  md:flex-row items-center justify-center gap-12 w-full">
         {/* Left: Image Section */}
         <div className="w-full md:w-1/2 flex justify-center">
           <AboutImange />
