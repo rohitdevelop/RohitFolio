@@ -47,10 +47,10 @@ const Footer = () => {
  
 <h3 className="text-lg font-semibold text-cyan-400">Get in Touch</h3>
 <p className="mt-3 text-gray-400 flex items-center gap-2">
-  <FaPhone className="text-cyan-400" /> +91 9876543210
+  <FaPhone className="text-cyan-400" /> +91 8287-xxxx-xx
 </p>
 <p className="text-gray-400 flex items-center gap-2">
-  <FaEnvelope className="text-cyan-400" /> rohit@example.com
+  <FaEnvelope className="text-cyan-400" /> rohitdev124421@gmail.com
 </p>
 <p className="text-gray-400 flex items-center gap-2">
   <FaMapMarkerAlt  className="text-cyan-400" /> Delhi,india
@@ -59,7 +59,7 @@ const Footer = () => {
 
           <div className="flex gap-4 mt-4">
             <a
-              href="https://github.com/your-github"
+              href="https://github.com/rohitdevelop"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-orange-400 transition"
@@ -67,7 +67,7 @@ const Footer = () => {
               <FaGithub size={24} />
             </a>
             <a
-              href="https://linkedin.com/in/your-linkedin"
+              href="https://www.linkedin.com/in/rohit-singh-b7777730a/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-orange-400 transition"
@@ -75,7 +75,7 @@ const Footer = () => {
               <FaLinkedin size={24} />
             </a>
             <a
-              href="https://twitter.com/your-twitter"
+              href="https://x.com/Rohit_coder5"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-orange-400 transition"
@@ -83,7 +83,7 @@ const Footer = () => {
               <FaTwitter size={24} />
             </a>
             <a
-              href="mailto:rohit@example.com"
+              href="mailto:rohitdev124421@gmail.com"
               className="text-gray-400 hover:text-orange-400 transition"
             >
               <FaEnvelope size={24} />

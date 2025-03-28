@@ -4,12 +4,12 @@ import ProjectsText from "./ProjectsText";
 
 const projects = [
   {
-    image: "/assets/project1.jpg",
+    image: "https://strapi.dhiwise.com/uploads/react_copy_to_clipboard_OG_Image_b7dc8db284.png",
     title: "Task Paste App",
     date: "dec 2024",
-    link: "#",
+    link: "https://copy-paste-app.vercel.app/",
     align: "left",  // Changed to left
-    about: "I use in thise react, tailwind and redux"
+    about: "I created a Copy-Paste App using React, Tailwind CSS, and Redux with a smooth UI and efficient state management"
   },
   {
     image: "/assets/project2.jpg",
