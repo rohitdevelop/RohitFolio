@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
- import { useNavigate } from "react-router-dom";
- import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -8,8 +7,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const stacksArray = ["Frontend Developer", "Backend Developer", "MERN Stack Developer"];
 
 const HeroText = () => {
-  const navigate = useNavigate();
-  const [stackIndex, setStackIndex] = useState(0);
+   const [stackIndex, setStackIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -54,7 +52,7 @@ const HeroText = () => {
       </div>
 
       <div className="flex md:block items-center justify-center mt-2 md:mt-4">
-        <button  onClick={() => navigate("/resume")} className="w-40 px-3 py-1.5 text-sm md:text-lg font-semibold text-white bg-orange-500 rounded-md 
+        <button   onClick={() => window.open("https://drive.google.com/drive/my-drive", "_blank")} className="w-40 px-3 py-1.5 text-sm md:text-lg font-semibold text-white bg-orange-500 rounded-md 
           transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 flex items-center justify-center gap-2 group">
           Resume 
           <FaArrowRightLong className="transition-all duration-300 group-hover:ml-2" />
