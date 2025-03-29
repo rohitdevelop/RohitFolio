@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaHtml5, FaJs, FaGitAlt, FaDatabase, FaDocker, FaAws, FaPython } from "react-icons/fa";
 import { SiCss3, SiTailwindcss, SiRedux, SiMongodb, SiExpress, SiTypescript, SiGraphql, SiFirebase } from "react-icons/si";
@@ -6,6 +6,16 @@ import { RiReactjsLine, RiNextjsFill } from "react-icons/ri";
 import { TbBrandNodejs } from "react-icons/tb";
 
 const SkilsAll = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const Skills = [
     { skill: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
     { skill: "CSS", icon: <SiCss3 className="text-blue-500" /> },
@@ -27,17 +37,19 @@ const SkilsAll = () => {
     { skill: "Python", icon: <FaPython className="text-blue-500" /> },
   ];
 
+  // Remove 6 skills when on mobile
+  const filteredSkills = isMobile ? Skills.slice(0, Skills.length - 6) : Skills;
+
   return (
-    <motion.div 
-      className="w-full bg-gray-700 rounded-3xl mx-auto p-6  shadow-lg shadow-cyan-500/30"
+    <motion.div
+      className="w-full bg-gray-700 rounded-3xl mx-auto p-6 shadow-lg shadow-cyan-500/30"
       initial={{ opacity: 0, y: -50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.2 }}
     >
-      {/* Responsive Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 sm:gap-6">
-        {Skills.map((Skill, index) => (
+        {filteredSkills.map((Skill, index) => (
           <motion.div
             key={index}
             className="rounded-xl p-4 sm:p-6 flex flex-col items-center shadow-lg
