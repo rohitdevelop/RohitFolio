@@ -1,5 +1,6 @@
 import React from "react";
-import { FaHtml5, FaJs, FaGitAlt, FaDatabase, FaDocker,FaAws, FaPython } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { FaHtml5, FaJs, FaGitAlt, FaDatabase, FaDocker, FaAws, FaPython } from "react-icons/fa";
 import { SiCss3, SiTailwindcss, SiRedux, SiMongodb, SiExpress, SiTypescript, SiGraphql, SiFirebase } from "react-icons/si";
 import { RiReactjsLine, RiNextjsFill } from "react-icons/ri";
 import { TbBrandNodejs } from "react-icons/tb";
@@ -27,25 +28,35 @@ const SkilsAll = () => {
   ];
 
   return (
-    <div className="max-w-6xl bg-gray-700 rounded-3xl mx-auto p-8 shadow-lg shadow-cyan-500/30">
+    <motion.div 
+      className="max-w-6xl bg-gray-700 rounded-3xl mx-auto p-8 shadow-lg shadow-cyan-500/30"
+      initial={{ opacity: 0, y: -50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: false, amount: 0.2 }}
+    >
       {/* Responsive Grid */}
-      <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6  gap-6">
+      <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-6">
         {Skills.map((Skill, index) => (
-          <div
+          <motion.div
             key={index}
             className="rounded-xl p-6 flex flex-col items-center shadow-lg
                        transition-all duration-300 transform 
                        hover:scale-105 hover:shadow-cyan-400/50 bg-gray-800 text-white relative"
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: index * 0.1 }}
+            viewport={{ once: false, amount: 0.2 }}
           >
             <div className="text-5xl mb-3">{Skill.icon}</div>
             <h3 className="text-lg font-bold">{Skill.skill}</h3>
 
             {/* Hover Effect Overlay */}
-            <div className="absolute inset-0  bg-cyan-400 opacity-0 hover:opacity-10 rounded-xl transition-opacity duration-300"></div>
-          </div>
+            <div className="absolute inset-0 bg-cyan-400 opacity-0 hover:opacity-10 rounded-xl transition-opacity duration-300"></div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
