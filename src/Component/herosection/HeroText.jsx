@@ -73,7 +73,7 @@ const HeroText = () => {
           variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 120, duration: 0.3 }}
-          onClick={() => window.open("https://drive.google.com/file/d/1CR-Ph4nH6Fq_wlA2s33VVVfKDSQ9WeHR/view?usp=sharing", "_blank")}
+          onClick={() => window.open("https://drive.google.com/file/d/1TAgqDBGA05XJYLYfb7p6uNoJzz8kl1b2/view?usp=sharing", "_blank")}
           className="w-40 px-3 py-2 text-sm md:text-lg font-semibold text-white bg-orange-500 rounded-md 
             transition-all duration-200 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 flex items-center justify-center gap-2 group"
         >
