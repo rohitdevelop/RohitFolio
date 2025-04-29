@@ -12,10 +12,10 @@ const projects = [
     about: "I created a Copy-Paste App using React, Tailwind CSS, and Redux with a smooth UI and efficient state management"
   },
   {
-    image: "/assets/project2.jpg",
+    image: "public/images/websitelogo.png",
     title: "WEBDEV Pathshala",
     date: "march 2025",
-    link: "#",
+    link: "https://lern-mern-2bu7.vercel.app/",
     align: "right",
     about: "I use in thise react, tailwind and redux"
 
