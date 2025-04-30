@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectsText from "./ProjectsText";
-
+import mern from "/public/images/websitelogo.png"
 const projects = [
   {
     image: "https://strapi.dhiwise.com/uploads/react_copy_to_clipboard_OG_Image_b7dc8db284.png",
@@ -12,7 +12,7 @@ const projects = [
     about: "I created a Copy-Paste App using React, Tailwind CSS, and Redux with a smooth UI and efficient state management"
   },
   {
-    image: "public/images/websitelogo.png",
+    image:  mern,
     title: "WEBDEV Pathshala",
     date: "march 2025",
     link: "https://lern-mern-2bu7.vercel.app/",
