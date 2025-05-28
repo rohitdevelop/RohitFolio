@@ -30,10 +30,10 @@ const projects = [
 
   },
   {
-    image: "/assets/project3.jpg",
-    title: "GYM web",
+    image: "https://variety.com/wp-content/uploads/2023/07/Main-Menu.png",
+    title: "Jeaopardy game",
     date: "jun 2025",
-    link: "#",
+    link: "https://fea-game-7rk2.vercel.app/",
     align: "right",  // Changed to left
     about: "I use in thise react, tailwind and redux"
 
