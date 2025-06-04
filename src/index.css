@@ -12,16 +12,16 @@ body{
   font-style: normal;
 }
 
-@keyframes loopIcons {
-  from {
-    transform: translateX(0);
+
+@keyframes loop{
+  from {     transform: translateX(0%);
   }
-  to {
-    transform: translateX(-10%);
+   to {
+    transform: translateX(-40%);
   }
 }
 
 .animate-loop {
-  animation: loopIcons 5s linear infinite;
+  animation: loop 20s linear infinite;
 }
 
