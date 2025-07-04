@@ -14,8 +14,8 @@ const AboutImage = () => {
         rotateAmplitude={15}
         scaleOnHover={1.0}
         showMobileWarning={false}
-        showTooltip={true}
-        displayOverlayContent={true}
+        showTooltip={false}
+        displayOverlayContent={false}
      
       />
     </div>

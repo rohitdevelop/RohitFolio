@@ -2,7 +2,7 @@ import React from "react";
 import { scroller } from "react-scroll";
 import { LuArrowDownRight as ArrowIcon } from "react-icons/lu";
 
-const NavbarBtn = () => {
+const NavbarBtn = ({ small = false }) => {
   const handleScroll = () => {
     scroller.scrollTo("contact", {
       smooth: true,
@@ -13,11 +13,12 @@ const NavbarBtn = () => {
 
   return (
     <button
-      onClick={handleScroll} // Manually scroll to Contact
-      className="px-5 py-2 rounded-full font-bold text-white border border-cyan-400 flex items-center gap-2 
-      bg-gradient-to-r from-cyan-400 to-yellow-600 
-      hover:border-amber-500 hover:scale-105 hover:rotate-1 hover:shadow-lg hover:shadow-cyan-500/50
-      transition-transform duration-300 ease-in-out"
+      onClick={handleScroll}
+      className={`rounded-full font-medium text-white cursor-pointer 
+      bg-gradient-to-r from-cyan-500 to-orange-600
+      hover:brightness-90 hover:scale-105 transition-all duration-300 ease-in-out 
+      flex items-center gap-2
+      ${small ? "px-4 py-1 text-sm" : "px-6 py-2 text-base"}`}
     >
       Hire Me <ArrowIcon />
     </button>

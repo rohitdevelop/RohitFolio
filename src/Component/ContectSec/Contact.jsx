@@ -37,7 +37,7 @@ const Contact = () => {
     <>
       <div
         id="contact"
-        className="bg-white" >
+        className="bg-pink-100" >
         <h1 className="text-cyan-500 pt-7 text-center text-3xl sm:text-4xl md:text-5xl font-bold">
           Contact <span className="text-black">Me</span>
         </h1>

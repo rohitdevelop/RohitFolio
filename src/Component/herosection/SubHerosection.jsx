@@ -50,8 +50,7 @@ const SubHerosection = () => {
             title={tech.name}
           >
             <span className="text-3xl md:text-4xl">{tech.icon}</span>
-            <p className="text-sm opacity-50 mt-1 hidden md:block">{tech.name}</p>
-          </div>
+           </div>
         ))}
       </div>
     </div>

@@ -5,7 +5,7 @@ import mern from "/public/images/websitelogo.png"
 const projects = [
   {
     image: "https://strapi.dhiwise.com/uploads/react_copy_to_clipboard_OG_Image_b7dc8db284.png",
-    title: "Task Paste App",
+    title: "Task Manager App",
     date: "dec 2024",
     link: "https://copy-paste-app.vercel.app/",
     align: "left",  // Changed to left
@@ -13,16 +13,16 @@ const projects = [
   },
   {
     image:  mern,
-    title: "WEBDEV Pathshala",
+    title: "WebDev Pathshala",
     date: "march 2025",
     link: "https://lern-mern-2bu7.vercel.app/",
     align: "right",
     about: "I use in thise react, tailwind and redux"
 
-  },
+  }, 
   {
-    image: "/assets/project3.jpg",
-    title: "E-Commmerse",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkEd4kOcRb1JJc0ahiRo0wsH9nmYB14oSWFA&amp;usqp=CAU",
+    title: "EcoSop E-Commmerse",
     date: "may 2025",
     link: "#",
     align: "left",  // Changed to left
@@ -42,7 +42,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div id="projects" className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div id="projects" className="py-12 px-4 sm:px-6 lg:px-8 w-full mx-auto  md:bg-gradient-to-tr md:from-orange-900 md:via-black md:to-cyan-900 ">
       <ProjectsText />
       <div className="mt-12 space-y-24">
         {projects.map((project, index) => (
