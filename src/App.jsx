@@ -5,6 +5,7 @@ import SubHerosection from "./Component/herosection/SubHerosection";
 import AboutMain from "./Component/aboutSection/AboutMain";
 import SkillsMain from "./Component/SkillSection/SkillsMain";
 import Projects from "./Component/ProjectSec/Projects";
+import Expmain from "./Component/Expirence/Expmain";
 import Contact from "./Component/ContectSec/Contact";
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <AboutMain />
       <SkillsMain />
       <Projects />
+      <Expmain />
       <Contact />
     </div>
   );

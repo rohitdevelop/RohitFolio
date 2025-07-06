@@ -7,7 +7,7 @@ const AboutMain = () => {
   return (
     <section
       id="about"
-      className="w-full py-12 px-6 flex flex-col items-center  md:bg-gradient-to-tr md:from-cyan-800 md:via-black md:to-orange-900"
+      className="w-full py-12 px-6 flex flex-col items-center  md:bg-gradient-to-tr md:from-cyan-900 md:via-black md:to-orange-950"
     >
       {/* Centered About Me */}
       <AboutText />

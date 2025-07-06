@@ -24,7 +24,7 @@ const projects = [
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkEd4kOcRb1JJc0ahiRo0wsH9nmYB14oSWFA&amp;usqp=CAU",
     title: "EcoSop E-Commmerse",
     date: "may 2025",
-    link: "#",
+    link: "https://ecoshop-front.vercel.app/",
     align: "left",  // Changed to left
     about: "I use in thise react, tailwind and redux"
 
@@ -42,7 +42,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div id="projects" className="py-12 px-4 sm:px-6 lg:px-8 w-full mx-auto  md:bg-gradient-to-tr md:from-orange-900 md:via-black md:to-cyan-900 ">
+    <div id="projects" className="py-12 px-4 sm:px-6 lg:px-8 w-full mx-auto  md:bg-gradient-to-tr md:from-cyan-900 md:via-black md:to-orange-950 ">
       <ProjectsText />
       <div className="mt-12 space-y-24">
         {projects.map((project, index) => (
