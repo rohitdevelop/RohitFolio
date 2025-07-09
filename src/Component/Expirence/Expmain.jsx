@@ -5,65 +5,173 @@ import Exptext from "./Exptext";
 const Expmain = () => {
   const data = [
     {
-      title: "June 2023 – Present",
+      title: "January 2023",
       content: (
         <div className="text-sm sm:text-base text-neutral-700 dark:text-neutral-300 space-y-2">
-          <p>Learned HTML, CSS, JavaScript, React, and Tailwind. Built projects like portfolio, blog site, and simple web apps.</p>
-          <ul className="list-disc pl-5">
-            <li>Made responsive UI with React</li>
-            <li>Used Hooks and React Router</li>
-          </ul>
+          <p>
+            {" "}
+            When I was in 12<sup>th</sup> grade, I started learning the basics
+            of computers, including HTML and CSS. That’s where my interest in
+            web development began.
+          </p>
+          <p>
+            • Then i created GFG Clone:{" "}
+            <a
+              href="https://rohitdevelop.github.io/geeksforgeeks/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-500 underline"
+            >
+              Visit
+            </a>
+          </p>
+          <p>
+            • Netflix Clone using Tailwind:{" "}
+            <a
+              href="https://rohitdevelop.github.io/NETFLIX/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-500 underline"
+            >
+              Visit
+            </a>
+          </p>
         </div>
       ),
     },
+
     {
-      title: "Nov 2023 – Present",
+      title: "Sep 2023",
       content: (
         <div className="text-sm sm:text-base text-neutral-700 dark:text-neutral-300 space-y-2">
-          <p>Learned backend using Express, Node.js, MongoDB. Created basic REST APIs and deployed them online.</p>
-          <ul className="list-disc pl-5">
-            <li>Handled user auth with JWT</li>
-            <li>Created basic full-stack apps</li>
-          </ul>
+          <p>
+            After that, I started learning my first programming language —
+            JavaScript. It was a great experience understanding its
+            functionality and how it works. I also built some small projects to
+            practice.
+          </p>
+
+          <p>
+            • Bubble Game:{" "}
+            <a
+              href="https://rohitdevelop.github.io/bubble-game/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-500 underline"
+            >
+              Visit
+            </a>
+          </p>
+
+          <p>
+            • Tic Tac Toe Game:{" "}
+            <a
+              href="https://rohitdevelop.github.io/Tic-toe-game/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-500 underline"
+            >
+              Visit
+            </a>
+          </p>
         </div>
       ),
     },
+
     {
-      title: "Jan 2024 – Present",
+      title: "feb 2024",
       content: (
         <div className="text-sm sm:text-base text-neutral-700 dark:text-neutral-300">
-          <p>Started building simple custom UI components like buttons and cards using Tailwind.</p>
+          <p>
+            Now it was time to dive into React — a powerful JavaScript library
+            for building user interfaces. Around this time, I also completed my
+            12<sup>th</sup> grade and finished my basic computer course.
+          </p>
+
+          <p>
+            • calculater in react:{" "}
+            <a
+              href=" https://rohitdevelop.github.io/react-calculater/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-500 underline"
+            >
+              Visit
+            </a>
+          </p>
+
+          <p>
+            • Jeopardy Game :{" "}
+            <a
+              href="https://fea-game.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-500 underline"
+            >
+              Visit
+            </a>
+          </p>
         </div>
       ),
     },
     {
-      title: "Feb 2024 – Present",
+      title: "dec 2024 ",
       content: (
         <div className="text-sm sm:text-base text-neutral-700 dark:text-neutral-300 space-y-2">
-          <p>Joined GeeksforGeeks as intern. Helped with frontend work and writing learning content.</p>
-          <ul className="list-disc pl-5">
-            <li>Wrote dev content in Hinglish</li>
-            <li>Contributed to small React features</li>
-          </ul>
+          <p>
+            I joined{" "}
+            <span className="font-semibold text-green-700">GeeksforGeeks</span>{" "}
+            as a student, where I started learning about the MERN Stack
+            (MongoDB, Express, React, Node.js). It helped me understand
+            full-stack development and improve my practical coding skills.
+          </p>
+
+          <img
+            src=" /images/geeksforgeeks.jpg"
+            alt="MERN Stack"
+            className="mt-4 rounded-lg w-24 max-w-md shadow-lg"
+          />
         </div>
       ),
     },
-    {
-      title: "Mar 2024 – Present",
-      content: (
-        <div className="text-sm sm:text-base text-neutral-700 dark:text-neutral-300">
-          <p>Built MERN projects like quiz app, blog system, jokes app with backend deployment.</p>
-        </div>
-      ),
-    },
-    {
-      title: "May 2024 – Present",
-      content: (
-        <div className="text-sm sm:text-base text-neutral-700 dark:text-neutral-300">
-          <p>Created blog-style learning site covering basics of web dev for Indian learners using React Router and Tailwind.</p>
-        </div>
-      ),
-    },
+  {
+  title: "Mar 2025",
+  content: (
+    <div className="text-sm sm:text-base text-neutral-700 dark:text-neutral-300 space-y-3">
+      <p>
+        By this time, I had learned how to build complete websites. However, I realized I was missing some backend knowledge. So I focused on improving my backend skills through hands-on coding practice and building projects using the MERN stack.
+      </p>
+      <p>
+        One of the projects I created during this time was a full-stack mini app:
+      </p>
+      <p>
+        • <span className="font-semibold">Jokes App</span>:{" "}
+        <a
+          href="https://jokes-frontend-gray.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-cyan-500 underline"
+        >
+          Visit
+        </a>
+      </p>
+    </div>
+  ),
+},
+
+{
+  title: "July 2025",
+  content: (
+    <div className="text-sm sm:text-base text-neutral-700 dark:text-neutral-300 space-y-2">
+      <p>
+        After building several projects and completing my MERN stack journey, I now feel confident in my skills — and I’m actively looking for a job or internship in web development.
+      </p>
+      <p>
+        I'm ready to contribute, learn, and grow as a full-stack developer in a professional environment.
+      </p>
+    </div>
+  ),
+},
   ];
 
   return (

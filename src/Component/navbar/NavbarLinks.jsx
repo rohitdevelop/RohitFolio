@@ -16,7 +16,7 @@ const NavbarLinks = ({ small = false }) => {
   return (
     <ul
       className={`flex flex-col lg:flex-row items-center justify-center text-center w-full text-white transition-all duration-300
-      ${small ? "gap-3 text-sm" : "gap-8 text-base"}`}
+      ${small ? "gap-2 text-[10px]" : "gap-8 text-base"}`}
     >
       {links.map(({ name, id }) => (
         <li key={name} className="relative group">
