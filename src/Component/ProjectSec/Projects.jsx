@@ -9,7 +9,7 @@ const projects = [
     date: "dec 2024",
     link: "https://copy-paste-app.vercel.app/",
     align: "left",  // Changed to left
-    about: "I created a Copy-Paste App using React, Tailwind CSS, and Redux with a smooth UI and efficient state management"
+    about: "I created a Task Manager App using React, Tailwind CSS, and Redux with a smooth UI and efficient state management"
   },
   {
     image:  mern,
@@ -17,16 +17,16 @@ const projects = [
     date: "march 2025",
     link: "https://lern-mern-2bu7.vercel.app/",
     align: "right",
-    about: "I use in thise react, tailwind and redux"
+    about: "I use in thise react, backend for authentication or quiz game and Ai chatbot"
 
   }, 
   {
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkEd4kOcRb1JJc0ahiRo0wsH9nmYB14oSWFA&amp;usqp=CAU",
     title: "EcoSop E-Commmerse",
     date: "may 2025",
-    link: "https://ecoshop-front.vercel.app/",
+    link: "https://ecoshop-front-mn3k.vercel.app/",
     align: "left",  // Changed to left
-    about: "I use in thise react, tailwind and redux"
+    about: "I use in thise next.js, backend and clerk"
 
   },
   {
@@ -35,7 +35,7 @@ const projects = [
     date: "jun 2025",
     link: "https://fea-game-7rk2.vercel.app/",
     align: "right",  // Changed to left
-    about: "I use in thise react, tailwind and redux"
+    about: "I use in thise react, tailwind and animated ui"
 
   },
 ];
