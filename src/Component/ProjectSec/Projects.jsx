@@ -2,7 +2,9 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectsText from "./ProjectsText";
 import mern from "/public/images/websitelogo.png"
-const projects = [
+    import { Link } from 'react-router-dom';
+    
+    const projects = [
   {
     image: "https://strapi.dhiwise.com/uploads/react_copy_to_clipboard_OG_Image_b7dc8db284.png",
     title: "Task Manager App",
@@ -57,6 +59,15 @@ const Projects = () => {
           />
         ))}
       </div>
+   <div className="flex justify-center items-center w-full my-4">
+  <Link
+    to="/manyproject"
+    className="py-3 px-6 sm:py-4 sm:px-8 text-center rounded-3xl sm:rounded-4xl bg-cyan-900 text-amber-50 font-semibold text-sm sm:text-lg hover:bg-cyan-700 transition duration-300"
+  >
+    View More
+  </Link>
+</div>
+
     </div>
   );
 };
