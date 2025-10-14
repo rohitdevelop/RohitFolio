@@ -59,10 +59,10 @@ const Projects = () => {
           />
         ))}
       </div>
-   <div className="flex justify-center items-center w-full my-4">
+   <div className="flex justify-center items-center w-full mt-10">
   <Link
     to="/manyproject"
-    className="py-3 px-6 sm:py-4 sm:px-8 text-center rounded-3xl sm:rounded-4xl bg-cyan-900 text-amber-50 font-semibold text-sm sm:text-lg hover:bg-cyan-700 transition duration-300"
+    className="py-3 px-3 sm:py-4 sm:px-8 text-center rounded-3xl sm:rounded-4xl bg-cyan-900 text-amber-50 font-semibold text-sm sm:text-lg hover:bg-cyan-700 transition duration-300"
   >
     View More
   </Link>
