@@ -10,7 +10,7 @@ const HeroMain = () => {
       className="relative pt-36 md:pt-44 lg:pt-56 pb-16 md:pb-20 overflow-hidden"
     >
       {/* Background Gradient */}
-      {/* <HeroGraidiant /> */}
+      <HeroGraidiant />
 
       {/* Main Content */}
       <div
