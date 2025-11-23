@@ -1,26 +1,40 @@
 import React from "react";
+import { IoCodeWorkingSharp } from "react-icons/io5";
 
 const NavbarLogo = ({ small = false }) => {
   return (
-    <h1
-      className={`relative font-bold items-center transition-all duration-300 
-      ${small ? "text-xl" : "text-3xl"}`}
-    >
-      {/* Gradient Shimmer Effect for Desktop */}
-      <span className="hidden md:inline bg-gradient-to-r from-cyan-400 to-yellow-500 bg-clip-text text-transparent">
-        RohitFolio
-      </span>
+    <>
 
-      {/* Short logo for Mobile */}
-      <span className="md:hidden text-cyan-400">
-        RF
-      </span>
+      {/* ====================== DESKTOP VERSION ====================== */}
+      <h1
+        className={`
+          hidden md:flex
+          font-bold text-white bg-orange-600 cursor-pointer 
+          rounded-full select-none
+          items-center justify-center gap-1
+          hover:brightness-90 hover:scale-105 transition-all duration-300 ease-in-out
+          ${small ? "px-4 py-1 text-sm" : "px-6 py-2 text-base"}
+        `}
+      >
+        Rohit
+        <IoCodeWorkingSharp className="text-white text-xl" />
+        Folio
+      </h1>
 
-      {/* Animated Glow Background (Optional Visual Layer) */}
-      <span className="absolute inset-0 -z-10 text-cyan-400 opacity-0 duration-500">
-        RohitFolio
-      </span>
-    </h1>
+      {/* ====================== MOBILE VERSION ====================== */}
+      <h1
+        className="
+          md:hidden flex items-center gap-1 
+          bg-transparent select-none
+          text-xl font-bold
+        "
+      >
+        <span className="text-orange-500">R</span>
+        <IoCodeWorkingSharp className="text-white text-xl" />
+        <span className="text-cyan-400">F</span>
+      </h1>
+
+    </>
   );
 };
 
