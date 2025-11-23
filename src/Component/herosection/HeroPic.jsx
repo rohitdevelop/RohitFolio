@@ -14,7 +14,7 @@ const HeroPic = () => {
   initial={{ opacity: 0, scale: 0.8 }}
   animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
   transition={{ duration: 0.8, ease: "easeOut" }}
-  className="flex flex-col items-center justify-center w-full md:hidden mt-6"
+  className="flex flex-col items-center justify-center w-full md:hidden mt-15"
 >
   <div className="relative w-[200px] h-[200px] sm:w-[240px] sm:h-[240px]">
     <div className="rounded-full overflow-hidden w-full h-full shadow-lg">
