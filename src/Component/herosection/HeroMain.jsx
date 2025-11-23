@@ -7,7 +7,7 @@ const HeroMain = () => {
   return (
     <div
       id="home"
-      className="relative pt-16 md:pb-0 pb-6 overflow-hidden"
+      className="relative pt-20 md:pb-6 pb-10 overflow-hidden"
     >
       {/* Background Gradient */}
       {/* <h1 className="text-8xl text-white">hello </h1> */}
