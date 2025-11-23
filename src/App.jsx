@@ -9,11 +9,11 @@ import Projects from "./Component/ProjectSec/Projects";
 import Expmain from "./Component/Expirence/Expmain";
 import Contact from "./Component/ContectSec/Contact";
 import ManyProjects from "./Component/ProjectSec/ManyProjects";
-
+import CustomCursor   from "./Component/cursons/CustomCursor";
 const App = () => {
   return (
     <div className="josefin-sans">
- 
+ <CustomCursor/>
       <Routes>
         {/* Home page */}
         <Route
