@@ -1,0 +1,2 @@
+          <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.0/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/I8CL8MNOp1eVJMtz/scene.splinecode"></spline-viewer>
