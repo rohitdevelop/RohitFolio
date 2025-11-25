@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectsText from "./ProjectsText";
-import mern from "/src/images/websitelogo.png";
+import mern from "../images/websitelogo.png";
 import { Link } from "react-router-dom";
 
 const projects = [
