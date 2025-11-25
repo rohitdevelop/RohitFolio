@@ -53,7 +53,7 @@ const HeroPic = () => {
             xl:w-[550px] xl:h-[550px]
           "
         >
-          <div className="absolute inset-0 rounded-full overflow-hidden shadow-xl">
+          <div className="absolute inset-0   overflow-hidden  ">
             <Spline
               scene="https://prod.spline.design/9zfUfWKvuzowewhe/scene.splinecode"
               className="w-full h-full"

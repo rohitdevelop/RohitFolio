@@ -105,7 +105,7 @@ const HeroText = () => {
               "_blank"
             )
           }
-          className="w-40 px-3 py-2 text-sm md:text-lg font-semibold text-white bg-orange-500 rounded-md 
+          className="w-40 px-3 py-2 text-sm md:text-lg font-semibold text-white bg-orange-500 rounded-md cursor-pointer
             transition-all duration-200 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 flex items-center justify-center gap-2 group"
         >
           Resume

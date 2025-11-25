@@ -10,10 +10,16 @@ import Expmain from "./Component/Expirence/Expmain";
 import Contact from "./Component/ContectSec/Contact";
 import ManyProjects from "./Component/ProjectSec/ManyProjects";
 import CustomCursor   from "./Component/cursons/CustomCursor";
+import { Toaster } from "react-hot-toast";
 const App = () => {
   return (
     <div className="josefin-sans">
  <CustomCursor/>
+ 
+<Toaster 
+        position="top-center" // Customize container position
+        reverseOrder={false} // Order of stacking
+      />
       <Routes>
         {/* Home page */}
         <Route

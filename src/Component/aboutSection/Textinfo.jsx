@@ -79,7 +79,7 @@ const Textinfo = () => {
           }}
           className="w-40 px-3 py-2 text-sm md:text-lg font-semibold text-white bg-orange-500 rounded-md 
              transition-all duration-200 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 
-             flex items-center justify-center gap-2 mt-2"
+             flex items-center justify-center cursor-pointer gap-2 mt-2"
         >
           Projects
           <FaArrowRightLong className="transition-all duration-200 group-hover:ml-2" />
