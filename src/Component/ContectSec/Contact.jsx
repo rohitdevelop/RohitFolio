@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { FaEnvelope, FaPhone, FaUser } from "react-icons/fa";
 import { toast } from "react-hot-toast";
- 
+import Footer from "./Footer.jsx";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -52,12 +52,6 @@ const Contact = () => {
     setFormData({ name: "", email: "", phone: "", message: "" });
   };
 
-  const Footer = () => (
-    <footer className="bg-gray-950 text-gray-400 py-6 text-center border-t border-gray-800">
-      <p className="text-sm">© 2024 All Rights Reserved</p>
-    </footer>
-  );
-
   return (
     <>
       <div
@@ -95,21 +89,14 @@ const Contact = () => {
           <h1 className="text-cyan-500 pt-7 text-center text-3xl sm:text-4xl md:text-5xl font-bold">
             Contact <span className="text-white">Me</span>
           </h1>
-          <motion.div
-            className="flex items-center justify-center w-full px-5 py-12 text-center"
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 100 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: false, amount: 0.5 }}
-          >
+          <div className="flex items-center justify-center w-full px-5 py-12 text-center">
             <div className="bg-gray-900/40 backdrop-blur-xl w-full max-w-4xl rounded-3xl py-9 px-6 shadow-2xl flex flex-col md:flex-row items-center gap-10 border border-gray-800/50">
               <motion.div
-                className="w-full md:w-1/3 hidden md:flex justify-center"
-                initial={{ opacity: 0, y: -50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -50 }}
-                transition={{ duration: 0.7 }}
+                className="w-full md:w-1/3 hidden md:flex pt-32 justify-center"
+                initial={{ opacity: 0, x: -80 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -80 }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
                 viewport={{ once: false, amount: 0.5 }}
               >
                 <img
@@ -118,11 +105,12 @@ const Contact = () => {
                   className="w-72 h-72 rounded-lg shadow-md object-cover transition-all duration-300 hover:border-4 hover:border-cyan-400"
                 />
               </motion.div>
+
               <motion.div
                 className="w-full md:w-2/3 p-6"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0,x: 80 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 50 }}
                 transition={{ duration: 0.7 }}
                 viewport={{ once: false, amount: 0.5 }}
               >
@@ -192,7 +180,7 @@ const Contact = () => {
                 {status && <p className="mt-4 text-gray-300">{status}</p>}
               </motion.div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
       <Footer />

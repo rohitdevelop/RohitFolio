@@ -1,101 +1,67 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope,FaPhone, FaMapMarkerAlt  } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faGithub,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-10 px-6 w-full">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-left">
-        {/* About Me Section */}
-        <div>
-          <h2 className="text-xl font-bold  text-orange-400">Rohit Singh</h2>
-          <p className="mt-3 text-gray-400 mb-4">
-            Thank you for visiting my personal portfolio website. Connect with
-            me over socials. 
-          </p>
-            <p className="text-gray-400">Keep Rising 🚀. Connect with me over live chat!</p>
-        </div>
+    <footer className="relative bg-black text-center text-white py-12 px-6 overflow-hidden">
 
-        {/* Quick Links */}
-        <div>
-          <h3 className="text-lg font-semibold text-cyan-400">Quick Links</h3>
-          <ul className="mt-3 space-y-2">
-            <li>
-              <a href="#home" className="hover:text-orange-400 transition">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="hover:text-orange-400 transition">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="hover:text-orange-400 transition">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:text-orange-400 transition">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+      {/* Glow Background */}
+      <div className="absolute top-20 left-70 w-[150px] animate-pulse h-[150px] md:w-[250px] md:h-[250px] bg-cyan-400 blur-[120px] opacity-40"></div>
+      <div className="absolute bottom-10 right-70 w-[150px] animate-pulse h-[150px] md:w-[250px] md:h-[250px] bg-orange-500 blur-[120px] opacity-40"></div>
 
-        {/* Contact & Socials */}
-        <div>
- 
-<h3 className="text-lg font-semibold text-cyan-400">Get in Touch</h3>
-<p className="mt-3 text-gray-400 flex items-center gap-2">
-  <FaPhone className="text-cyan-400" /> +91 8287-xxxx-xx
-</p>
-<p className="text-gray-400 flex items-center gap-2">
-  <FaEnvelope className="text-cyan-400" /> rohitdev124421@gmail.com
-</p>
-<p className="text-gray-400 flex items-center gap-2">
-  <FaMapMarkerAlt  className="text-cyan-400" /> Delhi,india
-</p>
+      {/* Content */}
+      <div className="relative z-10">
 
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-wide">
+          ROHIT SINGH
+        </h1>
 
-          <div className="flex gap-4 mt-4">
+        <div className="w-24 h-[3px] mx-auto mt-2 bg-gradient-to-r from-yellow-400 to-cyan-500 rounded-full"></div>
+
+        {/* Social Icons */}
+        <div className="flex justify-center flex-wrap gap-5 mt-6">
+
+          {[
+            { href: "https://www.linkedin.com/in/rohit-singh-b7777730a/", icon: faLinkedin },
+            { href: "https://github.com/rohitdevelop", icon: faGithub },
+            { href: "mailto:rohitdev124421@gmail.com", icon: faEnvelope },
+            { href: "https://x.com/Rohit_coder5", icon: faTwitter },
+            { href: "https://www.instagram.com/rohit_coder5/?hl=en", icon: faInstagram },
+          ].map(({ href, icon }, index) => (
             <a
-              href="https://github.com/rohitdevelop"
+              key={index}
+              href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-orange-400 transition"
+              className="w-10 h-10 flex items-center justify-center rounded-full border 
+                         border-white hover:border-cyan-400 text-white hover:text-cyan-400
+                         hover:shadow-lg hover:shadow-cyan-500/40 transition-all duration-300"
             >
-              <FaGithub size={24} />
+              <FontAwesomeIcon icon={icon} className="text-lg" />
             </a>
-            <a
-              href="https://www.linkedin.com/in/rohit-singh-b7777730a/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-orange-400 transition"
-            >
-              <FaLinkedin size={24} />
-            </a>
-            <a
-              href="https://x.com/Rohit_coder5"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-orange-400 transition"
-            >
-              <FaTwitter size={24} />
-            </a>
-            <a
-              href="mailto:rohitdev124421@gmail.com"
-              className="text-gray-400 hover:text-orange-400 transition"
-            >
-              <FaEnvelope size={24} />
-            </a>
-          </div>
+          ))}
+
         </div>
+
+        {/* Quote */}
+        <p className="mt-6 italic text-gray-400 text-sm sm:text-base">
+          "Success is when preparation meets opportunity"
+        </p>
+
+        {/* Copyright */}
+        <p className="text-xs mt-4 text-gray-500">
+          © 2025 Rohit Singh. All rights reserved.
+        </p>
+
       </div>
 
-      {/* Copyright */}
-      <div className="text-center mt-10 border-t border-gray-700 pt-4  text-gray-500 text-sm">
-      Designed by Rohit Singh ❤️
-      </div>
     </footer>
   );
 };
