@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Navbar from "../navbar/NavbarMain";
+import ProjectsText from "../ProjectSec/ProjectsText";
 import { motion } from "framer-motion";
 import { FaCode, FaExternalLinkSquareAlt, FaTag, FaGithub, FaFilter } from "react-icons/fa";
 
@@ -9,7 +10,7 @@ const ALL_PROJECTS = [
     id: 1,
     title: "resume_genrator",
     category: "Next.js + TS",
-    description: "A responsive resume using nextjs & TypeScript.",
+    description: "A responsive resume using nextjs + Ts.",
     link: "https://resume-genrator-three.vercel.app/",
     codeLink: "https://github.com/rohitdevelop/resume_genrator",
     image:      "https://alison.com/html/site/img/resume-builder/build-a-resume.svg",
@@ -53,21 +54,12 @@ const ManyProjects = () => {
   
       
     <Navbar />
-    <div className="min-h-screen bg-gradient-to-tr md:from-cyan-900 md:via-black md:to-orange-950 transition-colors duration-500 pt-10">
-      {/* Header */}
-      <div className="text-center pt-24 pb-10 px-4">
-        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-          Featured Projects
-        </h1>
-        <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          Explore my latest web development projects — from frontend UI to backend systems.
-        </p>
-      </div>
-
+    <div className="min-h-screen bg-gradient-to-tr md:from-cyan-900 md:via-black md:to-orange-950 transition-colors duration-500 pt-36">
+      <ProjectsText/>
+      
       {/* Filters */}
       <div className="flex flex-wrap justify-center gap-3 mb-12 px-4">
-        <FaFilter className="text-gray-500 dark:text-gray-300 mt-1" />
-        {categories.map((category) => (
+         {categories.map((category) => (
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}

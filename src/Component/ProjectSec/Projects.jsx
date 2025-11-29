@@ -41,7 +41,7 @@ const Projects = () => {
       <ProjectsText />
 
       {/* 2x2 Grid */}
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="mt-12 grid md:pl-24 md:pr-24 grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <ProjectCard
             key={index}

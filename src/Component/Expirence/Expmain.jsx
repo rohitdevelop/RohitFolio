@@ -1,90 +1,137 @@
 import React from "react";
-
-import Exptext from "./Exptext";
+import { GraduationCap, Code, Laptop, Wrench, Cpu, Server } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Expmain = () => {
   const Education = [
-    { title: "MERN Stack Development", date: "2024", type: "Tool/Technology" },
-    { title: "React & Tailwind Projects", date: "2024-2025", type: "Tool/Technology" },
-    { title: "BCA", date: "2023-Present", type: "Education" },
-    { title: "MERN Stack Certificate", date: "2024", type: "Certificate" },
+    {
+      title: "Class 10th and 12th (CBSE Board)",
+      date: "2022 & 2024",
+      icon: <GraduationCap className="w-5 h-5" />,
+    },
+    {
+      title: "BCA - Indira Gandhi Open University (IGNOU)",
+      date: "2024 - 2027 (Pursuing)",
+      icon: <GraduationCap className="w-5 h-5" />,
+    },
+    {
+      title: "MERN Course - GeeksforGeeks & Sheryians Coding School",
+      date: "2024 & 2025",
+      icon: <Code className="w-5 h-5" />,
+    },
+    {
+      title: "3 Months Internship as a Full Stack Developer",
+      date: "2025",
+      icon: <Laptop className="w-5 h-5" />,
+    },
   ];
-  
+
   const Technology = [
-    { title: "Advanced JavaScript", date: "2024", type: "Tool/Technology" },
-    { title: "Node.js & Express", date: "2024", type: "Tool/Technology" },
-    { title: "MongoDB Database", date: "2023-2024", type: "Education" },
-    { title: "Full Stack Developer", date: "2024", type: "Certificate" },
+    {
+      title: "Frontend Mastery",
+      tech: "HTML, CSS/SCSS, JavaScript, React, TypeScript, PHP, Python, FramerMotion, GSAP",
+      icon: <Code className="w-5 h-5" />,
+    },
+    {
+      title: "Backend & Database",
+      tech: "Node.js, RestFull API, System Design, MongoDB, Laravel, MySQL, MicroServices, Authentication",
+      icon: <Server className="w-5 h-5" />,
+    },
+    {
+      title: "Tools & Frameworks",
+      tech: "TailwindCSS, Git/GitHub, Next.js, Laravel, Express.js, Vercel, Shadcn, Render, Docker, Postman",
+      icon: <Wrench className="w-5 h-5" />,
+    },
+    {
+      title: "AI & Development Tools",
+      tech: "ChatGPT, Claude AI, Agentic AI, CodeRabbit, WakaTime, LLM",
+      icon: <Cpu className="w-5 h-5" />,
+    },
   ];
+
+  const TimelineItem = ({ data, accentColor, isEducation }) => {
+    return (
+      <motion.div
+        className="relative pl-16 md:pl-8 pb-8"
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <div className="absolute left-5 md:left-0 top-0 bottom-0 w-0.5 bg-gray-700"></div>
+
+        <div
+          className={`absolute left-5 md:left-0 top-2 -translate-x-1/2 w-10 h-10 rounded-full ${accentColor} bg-opacity-20 border-2 flex items-center justify-center`}
+        >
+          {data.icon}
+        </div>
+
+        <div
+          className="group relative overflow-hidden bg-gray-800 bg-opacity-50 backdrop-blur-sm p-5 rounded-xl 
+               border border-gray-700 transition-all duration-300 
+               hover:border-opacity-70 hover:shadow-2xl"
+        >
+          <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
+
+          <div className="relative">
+            <h4 className="text-white font-semibold text-lg mb-2">{data.title}</h4>
+            <p className={`text-sm ${accentColor}`}>
+              {isEducation ? data.date : data.tech}
+            </p>
+          </div>
+        </div>
+      </motion.div>
+    );
+  };
 
   return (
-    <div 
+    <div
       id="expirence"
-      className="min-h-screen w-full bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 md:bg-gradient-to-tr md:from-cyan-900 md:via-black md:to-orange-950 transition-all duration-300 py-12 px-4 md:px-8">
-      
-      <Exptext />
- 
-      <div className="max-w-7xl mx-auto">
+      className="min-h-screen w-full md:bg-gradient-to-tr md:from-cyan-900 md:via-black md:to-orange-950 py-16 px-4"
+    >
+      <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+          {/* Education & Experience */}
+          <div>
+            <div className="flex items-center gap-3 mb-8">
+              <GraduationCap className="w-8 h-8 text-cyan-400" />
+              <h3 className="text-3xl md:text-4xl font-bold text-white">
+                Education & Experience
+              </h3>
+            </div>
 
-          {/* Education Timeline */}
-          <div className="space-y-4">
-            <h3 className="text-2xl md:text-3xl font-bold text-cyan-400 mb-8 text-center lg:text-left">
-              🎓 Education & Certificates
-            </h3>
-            <div className="relative border-l-2 border-cyan-500 ml-4 pl-8">
+            <div className="space-y-0">
               {Education.map((exp, index) => (
-                <div key={index} className="mb-10 relative group">
-                  {/* Animated Dot */}
-                  <span className="absolute -left-[2.4rem] top-2 w-5 h-5 bg-orange-500 rounded-full border-4 border-gray-950 group-hover:scale-125 group-hover:bg-cyan-400 transition-all duration-300 shadow-lg group-hover:shadow-cyan-500/50"></span>
-
-                  {/* Card */}
-                  <div className="relative overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-cyan-500/30 transition-all duration-300 border border-gray-700 group-hover:border-cyan-500/40">
-                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
-                    <div className="relative">
-                      <p className="text-cyan-400 font-semibold text-sm mb-2">{exp.date}</p>
-                      <h4 className="text-white font-bold text-xl md:text-2xl mb-2 group-hover:text-cyan-300 transition-colors duration-300">
-                        {exp.title}
-                      </h4>
-                      <span className="inline-block bg-orange-500/20 text-orange-400 px-3 py-1 rounded-full text-sm font-medium border border-orange-500/30">
-                        {exp.type}
-                      </span>
-                    </div>
-                  </div>
-                </div>
+                <TimelineItem
+                  key={index}
+                  data={exp}
+                  accentColor="text-cyan-400 border-cyan-400"
+                  isEducation={true}
+                />
               ))}
             </div>
           </div>
 
-          {/* Technology Timeline */}
-          <div className="space-y-4">
-            <h3 className="text-2xl md:text-3xl font-bold text-orange-400 mb-8 text-center lg:text-left">
-              💻 Skills & Technology
-            </h3>
-            <div className="relative border-l-2 border-orange-500 ml-4 pl-8">
+          {/* Technology & Skills */}
+          <div>
+            <div className="flex items-center gap-3 mb-8">
+              <Wrench className="w-8 h-8 text-orange-400" />
+              <h3 className="text-3xl md:text-4xl font-bold text-white">
+                Skills & Expertise
+              </h3>
+            </div>
+
+            <div className="space-y-0">
               {Technology.map((exp, index) => (
-                <div key={index} className="mb-10 relative group">
-                  {/* Animated Dot */}
-                  <span className="absolute -left-[2.4rem] top-2 w-5 h-5 bg-cyan-500 rounded-full border-4 border-gray-950 group-hover:scale-125 group-hover:bg-orange-400 transition-all duration-300 shadow-lg group-hover:shadow-orange-500/50"></span>
-
-                  {/* Card */}
-                  <div className="relative overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-orange-500/30 transition-all duration-300 border border-gray-700 group-hover:border-orange-500/40">
-                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
-                    <div className="relative">
-                      <p className="text-orange-400 font-semibold text-sm mb-2">{exp.date}</p>
-                      <h4 className="text-white font-bold text-xl md:text-2xl mb-2 group-hover:text-orange-300 transition-colors duration-300">
-                        {exp.title}
-                      </h4>
-                      <span className="inline-block bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded-full text-sm font-medium border border-cyan-500/30">
-                        {exp.type}
-                      </span>
-                    </div>
-                  </div>
-                </div>
+                <TimelineItem
+                  key={index}
+                  data={exp}
+                  accentColor="text-orange-400 border-orange-400"
+                  isEducation={false}
+                />
               ))}
             </div>
           </div>
-
         </div>
       </div>
     </div>
