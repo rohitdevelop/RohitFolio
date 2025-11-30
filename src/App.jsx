@@ -10,16 +10,20 @@ import Expmain from "./Component/Expirence/Expmain";
 import Contact from "./Component/ContectSec/Contact";
 import ManyProjects from "./Component/ProjectSec/ManyProjects";
 import CustomCursor   from "./Component/cursons/CustomCursor";
+import  Loader from "./Component/Loader/Loader.tsx";
 import { Toaster } from "react-hot-toast";
 const App = () => {
   return (
+    <>
+    <Loader duration={2000}>
+
     <div className="josefin-sans">
  <CustomCursor/>
  
 <Toaster 
         position="top-center" // Customize container position
         reverseOrder={false} // Order of stacking
-      />
+        />
       <Routes>
         {/* Home page */}
         <Route
@@ -42,6 +46,8 @@ const App = () => {
         <Route path="/manyproject" element={<ManyProjects />} />
       </Routes>
     </div>
+          </Loader>
+          </>
   );
 };
 

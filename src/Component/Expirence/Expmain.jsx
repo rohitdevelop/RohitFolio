@@ -51,13 +51,14 @@ const Expmain = () => {
 
   const TimelineItem = ({ data, accentColor, isEducation }) => {
     return (
-      <motion.div
-        className="relative pl-16 md:pl-8 pb-8"
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
+    <motion.div
+  className="relative pl-16 md:pl-8 pb-8"
+  initial={{ opacity: 0, y: -80 }}   // Start from TOP
+  whileInView={{ opacity: 1, y: 0 }} // Move DOWN into place
+  viewport={{ once: true, amount: 0.2 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
+
         <div className="absolute left-5 md:left-0 top-0 bottom-0 w-0.5 bg-gray-700"></div>
 
         <div
