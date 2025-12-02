@@ -1,7 +1,7 @@
 import React from "react";
 import { GraduationCap, Code, Laptop, Wrench, Cpu, Server } from "lucide-react";
 import { motion } from "framer-motion";
-
+import Certificats from "./Certificats";
 const Expmain = () => {
   const Education = [
     {
@@ -53,8 +53,8 @@ const Expmain = () => {
     return (
     <motion.div
   className="relative pl-16 md:pl-8 pb-8"
-  initial={{ opacity: 0, y: -80 }}   // Start from TOP
-  whileInView={{ opacity: 1, y: 0 }} // Move DOWN into place
+  initial={{ opacity: 0, y: -80 }}    
+  whileInView={{ opacity: 1, y: 0 }}  
   viewport={{ once: true, amount: 0.2 }}
   transition={{ duration: 0.8, ease: "easeOut" }}
 >
@@ -76,7 +76,7 @@ const Expmain = () => {
 
           <div className="relative">
             <h4 className="text-white font-semibold text-lg mb-2">{data.title}</h4>
-            <p className={`text-sm ${accentColor}`}>
+            <p className={`text-sm text-gray-400`}>
               {isEducation ? data.date : data.tech}
             </p>
           </div>
@@ -95,8 +95,7 @@ const Expmain = () => {
           {/* Education & Experience */}
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <GraduationCap className="w-8 h-8 text-cyan-400" />
-              <h3 className="text-3xl md:text-4xl font-bold text-white">
+               <h3 className="text-3xl md:text-4xl font-bold text-cyan-400">
                 Education & Experience
               </h3>
             </div>
@@ -116,8 +115,7 @@ const Expmain = () => {
           {/* Technology & Skills */}
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <Wrench className="w-8 h-8 text-orange-400" />
-              <h3 className="text-3xl md:text-4xl font-bold text-white">
+               <h3 className="text-3xl md:text-4xl font-bold text-orange-400">
                 Skills & Expertise
               </h3>
             </div>
@@ -135,6 +133,7 @@ const Expmain = () => {
           </div>
         </div>
       </div>
+      <Certificats />
     </div>
   );
 };
