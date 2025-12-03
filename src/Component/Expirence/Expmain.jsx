@@ -51,15 +51,14 @@ const Expmain = () => {
 
   const TimelineItem = ({ data, accentColor, isEducation }) => {
     return (
-    <motion.div
-  className="relative pl-16 md:pl-8 pb-8"
-  initial={{ opacity: 0, y: -80 }}    
-  whileInView={{ opacity: 1, y: 0 }}  
-  viewport={{ once: true, amount: 0.2 }}
-  transition={{ duration: 0.8, ease: "easeOut" }}
->
-
-        <div className="absolute left-5 md:left-0 top-0 bottom-0 w-0.5 bg-gray-700"></div>
+      <motion.div
+        className="relative pl-16 md:pl-8 pb-8"
+        initial={{ opacity: 0, y: -80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <div className="absolute left-5 md:left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b to-gray-400 from-black"></div>
 
         <div
           className={`absolute left-5 md:left-0 top-2 -translate-x-1/2 w-10 h-10 rounded-full ${accentColor} bg-opacity-20 border-2 flex items-center justify-center`}
@@ -75,7 +74,9 @@ const Expmain = () => {
           <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
 
           <div className="relative">
-            <h4 className="text-white font-semibold text-lg mb-2">{data.title}</h4>
+            <h4 className="text-white font-semibold text-lg mb-2">
+              {data.title}
+            </h4>
             <p className={`text-sm text-gray-400`}>
               {isEducation ? data.date : data.tech}
             </p>
@@ -95,7 +96,7 @@ const Expmain = () => {
           {/* Education & Experience */}
           <div>
             <div className="flex items-center gap-3 mb-8">
-               <h3 className="text-3xl md:text-4xl font-bold text-cyan-400">
+              <h3 className="text-3xl md:text-4xl font-bold text-cyan-400">
                 Education & Experience
               </h3>
             </div>
@@ -115,7 +116,7 @@ const Expmain = () => {
           {/* Technology & Skills */}
           <div>
             <div className="flex items-center gap-3 mb-8">
-               <h3 className="text-3xl md:text-4xl font-bold text-orange-400">
+              <h3 className="text-3xl md:text-4xl font-bold text-orange-400">
                 Skills & Expertise
               </h3>
             </div>
