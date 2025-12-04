@@ -9,45 +9,41 @@ import Projects from "./Component/ProjectSec/Projects";
 import Expmain from "./Component/Expirence/Expmain";
 import Contact from "./Component/ContectSec/Contact";
 import ManyProjects from "./Component/ProjectSec/ManyProjects";
-import CustomCursor   from "./Component/cursons/CustomCursor";
-import  Loader from "./Component/Loader/Loader.tsx";
+import CustomCursor from "./Component/cursons/CustomCursor";
+import Loader from "./Component/Loader/Loader.tsx";
 import { Toaster } from "react-hot-toast";
 const App = () => {
   return (
     <>
-    <Loader duration={2000}>
+      <Loader duration={2000}>
+        <div className="josefin-sans">
+          <CustomCursor />
 
-    <div className="josefin-sans">
- <CustomCursor/>
- 
-<Toaster 
-        position="top-center" // Customize container position
-        reverseOrder={false} // Order of stacking
-        />
-      <Routes>
-        {/* Home page */}
-        <Route
-          path="/"
-          element={
-            <>
-            <NavbarMain />
-              <HeroMain />
-              <SubHerosection />
-              <AboutMain />
-              <SkillsMain />
-              <Projects />
-              <Expmain />
-              <Contact />
-            </>
-          }
-        />
+          <Toaster position="top-center" reverseOrder={false} />
+          <Routes>
+            {/* Home page */}
+            <Route
+              path="/"
+              element={
+                <>
+                  <NavbarMain />
+                  <HeroMain />
+                  <SubHerosection />
+                  <AboutMain />
+                  <SkillsMain />
+                  <Projects />
+                  <Expmain />
+                  <Contact />
+                </>
+              }
+            />
 
-        {/* Many Projects page */}
-        <Route path="/manyproject" element={<ManyProjects />} />
-      </Routes>
-    </div>
-          </Loader>
-          </>
+            {/* Many Projects page */}
+            <Route path="/manyproject" element={<ManyProjects />} />
+          </Routes>
+        </div>
+      </Loader>
+    </>
   );
 };
 
