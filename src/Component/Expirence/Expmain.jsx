@@ -97,7 +97,7 @@ const Expmain = () => {
           <div>
             <div className="flex items-center gap-3 mb-8">
               <h3 className="text-3xl md:text-4xl font-bold text-cyan-400">
-                Education & Experience
+                <span className='text-white'>Education &</span> Experience
               </h3>
             </div>
 
@@ -117,7 +117,7 @@ const Expmain = () => {
           <div>
             <div className="flex items-center gap-3 mb-8">
               <h3 className="text-3xl md:text-4xl font-bold text-orange-400">
-                Skills & Expertise
+                <span className='text-white'>Skills & </span>Expertise
               </h3>
             </div>
 
