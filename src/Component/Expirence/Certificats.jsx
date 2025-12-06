@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { X, Award } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import  EnglishCertificate from "/src/Component/images/certificate.png.png";
-import  geegkforgeeksCertificated from "/src/Component/images/geegkforgeeks.png.png";
-import  Offerlatter from "/src/Component/images/Offerlatter.png.png";
+import  EnglishCertificate from "/information/certificate.png";
+import  geegkforgeeksCertificated from "/information/geegkforgeeksIntern.png";
+import  Offerlatter from "/information/Offerlatter.png";
 const ALL_CERTIFICATE = [
   {
     id: 1,
