@@ -9,10 +9,10 @@ const ProjectCard = ({ image, name, link, about }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false, amount: 0.3 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="flex flex-col bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/50 transition-shadow duration-500 m-4"
+      className="flex flex-col bg-gray-900 rounded-b-lg overflow-hidden shadow-lg hover:shadow-cyan-500/50 transition-shadow duration-500 m-4"
     >
       {/* Image */}
-      <div className="w-full h-48 md:h-52 lg:h-56 overflow-hidden group">
+      <div className="w-full h-48 md:h-52 lg:h-56 overflow-hidden group border-8 border-gray-900">
         <motion.img
           src={image}
           alt={name}
