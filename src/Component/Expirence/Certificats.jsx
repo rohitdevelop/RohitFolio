@@ -1,28 +1,27 @@
 import React, { useState } from "react";
 import { X, Award } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import  EnglishCertificate from "/src/Component/images/certificate.png.png";
+import  geegkforgeeksCertificated from "/src/Component/images/geegkforgeeks.png.png";
+import  Offerlatter from "/src/Component/images/Offerlatter.png.png";
 const ALL_CERTIFICATE = [
   {
     id: 1,
     title: "GeeksforGeeks",
     description: "Certificate of Internship as a MERN stack developer",
-    image:
-      "src/Component/images/geegkforgeeks.png.png",
+    image:geegkforgeeksCertificated,
   },
   {
     id: 2,
     title: "RD GROUP",
     description: "Certificate of Internship as a Full Stack developer",
-    image:
-      "src/Component/images/Offerlatter.png.png",
+    image:Offerlatter,
   },
   {
     id: 3,
     title: "English Speaking",
     description: "English Speaking Course to enhance communication skills",
-    image:
-      "src/Component/images/certificate.png.png",
+    image: EnglishCertificate,
   },
 ];
 
