@@ -8,21 +8,21 @@ const ALL_CERTIFICATE = [
     title: "GeeksforGeeks",
     description: "Certificate of Internship as a MERN stack developer",
     image:
-      "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=800&h=600&fit=crop",
+      "src/Component/images/geegkforgeeks.png.png",
   },
   {
     id: 2,
     title: "RD GROUP",
     description: "Certificate of Internship as a Full Stack developer",
     image:
-      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop",
+      "src/Component/images/Offerlatter.png.png",
   },
   {
     id: 3,
     title: "English Speaking",
     description: "English Speaking Course to enhance communication skills",
     image:
-      "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=800&h=600&fit=crop",
+      "src/Component/images/certificate.png.png",
   },
 ];
 
