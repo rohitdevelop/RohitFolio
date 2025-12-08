@@ -67,11 +67,11 @@ const Expmain = () => {
         </div>
 
         <div
-          className="group relative overflow-hidden bg-gray-800 bg-opacity-50 backdrop-blur-sm p-5 rounded-xl 
-               border border-gray-700 transition-all duration-300 
+          className="group relative overflow-hidden bg-gray-700/10 bg-opacity-50 backdrop-blur-sm p-5 rounded-xl 
+               border border-t-gray-600 border-l-gray-600 border-b-gray-400 border-r-gray-400 transition-all duration-300 
                hover:border-opacity-70 hover:shadow-2xl"
         >
-          <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
+          <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
 
           <div className="relative">
             <h4 className="text-white font-semibold text-lg mb-2">

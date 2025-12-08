@@ -38,7 +38,7 @@ const NavbarMain = () => {
       <div
         className={`
           relative flex justify-between items-center
-          bg-black/80 text-white backdrop-blur-md rounded-full border border-white/30
+           bg-black    text-white backdrop-blur-md rounded-full border border-white/30
           transition-all duration-500 ease-in-out
           ${isScrolled ? "w-[500px] py-2 px-4 gap-x-4" : "w-[1200px] py-3 px-6 gap-x-8"}
         `}

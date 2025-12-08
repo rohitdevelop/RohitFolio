@@ -45,7 +45,7 @@ const Certificates = () => {
         {ALL_CERTIFICATE.map((cert, i) => (
       <motion.div
   key={cert.id}
-  className="group relative cursor-pointer bg-gray-800 rounded-b-lg overflow-hidden shadow-lg"
+  className="group relative cursor-pointer bg-gray-900 backdrop-blur-sm rounded-b-lg overflow-hidden shadow-lg"
   onClick={() => setActiveImg(cert)}
    initial={{ opacity: 0, y: 50 }}
   whileInView={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ const Certificates = () => {
 >
 
             {/* Image */}
-            <motion.div className="relative aspect-video overflow-hidden bg-gray-700 border-gray-800 border-8">
+            <motion.div className="relative aspect-video overflow-hidden bg-gray-700 border-gray-900 border-8">
               <motion.img
                 src={cert.image}
                 alt={cert.title}

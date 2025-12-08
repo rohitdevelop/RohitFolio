@@ -97,8 +97,7 @@ const HeroText = () => {
             hidden: { opacity: 0, y: -20 },
             visible: { opacity: 1, y: 0 },
           }}
-          whileHover={{ scale: 1.05 }}
-          transition={{ type: "spring", stiffness: 120, duration: 0.3 }}
+           transition={{ type: "spring", stiffness: 120, duration: 0.3 }}
           onClick={() =>
             window.open(
               "https://drive.google.com/file/d/1VIAcH6dm_KdumsY0sFgh0ctmllCXRraO/view?usp=drive_link",
@@ -106,13 +105,12 @@ const HeroText = () => {
             )
           }
           className="w-40 px-3 py-2 text-sm md:text-lg font-semibold text-white bg-orange-500 rounded-md cursor-pointer
-            transition-all duration-200 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 flex items-center justify-center gap-2 group"
+            transition-all duration-200 transform  hover:shadow-lg hover:shadow-orange-500/50 flex items-center justify-center gap-2 group"
         >
           Resume
           <FaArrowRightLong className="transition-all duration-200 group-hover:ml-2" />
         </motion.button>
       </motion.div>
-
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 10 },

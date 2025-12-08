@@ -14,8 +14,7 @@ const NavbarBtn = ({ small = false }) => {
   return (
     <button
       onClick={handleScroll}
-      className={`rounded-full font-medium text-white cursor-pointer 
-      bg-orange-600
+      className={`rounded-full font-medium text-white cursor-pointer bg-orange-700/30 backdrop-blur-lg border border-orange-400/70
       hover:brightness-90 hover:scale-105 transition-all duration-300 ease-in-out 
       flex items-center gap-2
       ${small ? "px-4 py-1 text-sm" : "px-6 py-2 text-base"}`}

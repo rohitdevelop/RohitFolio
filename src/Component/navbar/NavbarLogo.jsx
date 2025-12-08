@@ -9,7 +9,7 @@ const NavbarLogo = ({ small = false }) => {
       <h1
         className={`
           hidden md:flex
-          font-bold text-white bg-orange-600 cursor-pointer 
+          font-bold text-white bg-orange-700/30 backdrop-blur-lg border border-orange-400/70 cursor-pointer 
           rounded-full select-none
           items-center justify-center gap-1
           hover:brightness-90 hover:scale-105 transition-all duration-300 ease-in-out
