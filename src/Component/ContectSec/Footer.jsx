@@ -41,7 +41,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full border 
-                         border-white hover:border-cyan-400 text-white hover:text-cyan-400
+                         border-white hover:scale-110 hover:rotate-20 hover:border-cyan-400 text-white hover:text-cyan-400
                          hover:shadow-lg hover:shadow-cyan-500/40 transition-all duration-300"
             >
               <FontAwesomeIcon icon={icon} className="text-lg" />

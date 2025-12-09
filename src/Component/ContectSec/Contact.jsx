@@ -23,7 +23,7 @@ const Contact = () => {
           id: i,
           x: Math.random() * 100,
           y: Math.random() * 100,
-          size: Math.random() * 2 + 1,
+          size: Math.random() * 10 + 5,
           duration: Math.random() * 3 + 2,
           delay: Math.random() * 2,
         });
@@ -63,7 +63,7 @@ const Contact = () => {
           {stars.map((star) => (
             <motion.div
               key={star.id}
-              className="absolute bg-white rounded-full"
+              className="absolute bg-cyan-400 rounded-full"
               style={{
                 width: `${star.size}px`,
                 height: `${star.size}px`,
