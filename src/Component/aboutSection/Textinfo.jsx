@@ -1,19 +1,11 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { FaArrowRightLong } from "react-icons/fa6"; // <-- import the arrow icon
+ import { FaArrowRightLong } from "react-icons/fa6"; // <-- import the arrow icon
 
-const textVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: (i) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.2, duration: 0.5 },
-  }),
-};
+ 
 
 const Textinfo = () => {
   return (
-  <div className="flex flex-col text-left gap-6 px-4">
+  <div className="flex flex-col text-left gap-6 px-4 ">
   {/* Data array including the button configuration as the last item */}
   {[
     { heading: "I'm Rohit Singh", subHeading: "MERN Stack Developer" },
@@ -29,15 +21,13 @@ const Textinfo = () => {
     // **NEW ITEM FOR THE BUTTON**
     { isButton: true, key: "projects-button" },
   ].map((item, index) => (
-    <motion.div
+    < div
       key={item.key || index} // Use item.key for the button, or index for others
       custom={index}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.5 }}
-      // Use the same variants for the button item
-      variants={textVariants}
-      className="text-white font-semibold"
+        className="text-white font-semibold"
     >
       {/* RENDER FOR REGULAR ITEMS */}
       {!item.isButton && item.heading && (
@@ -81,7 +71,7 @@ const Textinfo = () => {
            <FaArrowRightLong className="transition-all duration-200 group-hover:ml-2" />
         </button>
       )}
-    </motion.div>
+    </ div>
   ))}
 </div>
   );

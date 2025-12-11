@@ -24,6 +24,7 @@ const NavbarBtn = ({ small = false }) => {
     </button>
 
     <button
+          onClick={handleScroll}
        className={`md:hidden rounded-full font-medium text-white cursor-pointer bg-orange-500
         hover:brightness-90 hover:scale-105 transition-all duration-300 ease-in-out 
         flex items-center gap-2

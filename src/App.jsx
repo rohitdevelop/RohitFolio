@@ -15,7 +15,7 @@ import { Toaster } from "react-hot-toast";
 const App = () => {
   return (
     <>
-      <Loader duration={2000}>
+      {/* <Loader duration={2000}> */}
         <div className="josefin-sans">
           <CustomCursor />
 
@@ -42,7 +42,7 @@ const App = () => {
             <Route path="/manyproject" element={<ManyProjects />} />
           </Routes>
         </div>
-      </Loader>
+      {/* </Loader> */}
     </>
   );
 };
