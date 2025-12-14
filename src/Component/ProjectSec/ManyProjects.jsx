@@ -57,14 +57,13 @@ const ALL_PROJECTS = [
   },
   {
     id: 5,
-    title: "Scrolling Efect",
+    title: "Password Genrator",
     category: "React",
-    description: "photo Scrolling landing page.",
-    link: "https://scrolling-effect-zeta.vercel.app/",
-    codeLink: " https://github.com/rohitdevelop/scrolling-effect",
+    description: "Genrator password in text and numbers.",
+    link: "https://react-calculater-two.vercel.app/",
+    codeLink: "https://github.com/rohitdevelop",
     image:
-      "https://orpetron.com/wp-content/uploads/2023/12/Screenshot-2023-12-16-095700.png",
-
+      "https://miro.medium.com/0*NKb54QipseUId6h8", 
     tags: ["Lenis", "GSAP", "smooth scroll"],
   },
  
