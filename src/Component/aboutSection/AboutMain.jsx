@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 
 const AboutMain = () => {
   const leftToRight = {
-    hidden: { opacity: 0, x: -40 },
+      hidden: { opacity: 0, x: -80 },
     visible: {
-      opacity: 1,
+      opacity: 2,
       x: 0,
       transition: {
         type: "spring",
@@ -21,9 +21,9 @@ const AboutMain = () => {
   };
 
   const rightToLeft = {
-    hidden: { opacity: 0, x: 40 },
+    hidden: { opacity: 0, x: 80 },
     visible: {
-      opacity: 1,
+      opacity: 2,
       x: 0,
       transition: {
         type: "spring",

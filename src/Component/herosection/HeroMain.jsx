@@ -10,7 +10,7 @@ const HeroMain = () => {
   const leftToRight = {
     hidden: { opacity: 0, x: -80 },
     visible: {
-      opacity: 1,
+      opacity: 2,
       x: 0,
       transition: {
         type: "spring",
@@ -26,7 +26,7 @@ const HeroMain = () => {
   const rightToLeft = {
     hidden: { opacity: 0, x: 80 },
     visible: {
-      opacity: 1,
+      opacity: 2,
       x: 0,
       transition: {
         type: "spring",
