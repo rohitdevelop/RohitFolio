@@ -91,36 +91,35 @@ const Contact = () => {
             Contact <span className="text-white">Me</span>
           </h1>
           <div className="flex items-center justify-center w-full px-5 py-12 text-center">
-            <div className="bg-gray-900/40 backdrop-blur-xl w-full max-w-4xl rounded-3xl py-9 px-6 shadow-2xl flex flex-col md:flex-row items-center gap-10 border border-gray-800/50">
-             <motion.div
-  className="w-full md:w-1/3 hidden md:flex justify-center items-center"
-  initial={{ opacity: 0, x: -40 }}
-  whileInView={{ opacity: 1, x: 0 }}
-  transition={{ duration: 0.7, ease: "easeOut" }}
-  viewport={{ once: true, amount: 0.5 }}
->
-  <div className="flex justify-center items-center">
-    <div className="relative w-[220px] h-[220px] sm:w-[260px] sm:h-[260px]">
-      <div className="w-full h-full rounded-2xl overflow-hidden shadow-2xl border border-gray-700/40">
-        <TiltedCard
-          imageSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1-p91wykF52aYIBzdmSb53lXSqmFNJjCi84UOkIk0KhLIjJRMsG9EyB1G&s=10"
-          imageClassName="object-cover w-full h-full"
-          customWrapperClass="w-full h-full"
-          backgroundElement={null}
-          containerHeight="100%"
-          containerWidth="100%"
-          imageHeight="100%"
-          imageWidth="100%"
-          rotateAmplitude={10}
-          scaleOnHover={1.03}
-          showTooltip={false}
-          displayOverlayContent={false}
-        />
-      </div>
-    </div>
-  </div>
-</motion.div>
-
+            <div className="bg-gray-900/40 backdrop-blur-xl w-full max-w-4xl  rounded-3xl md:py-9 md:px-6 shadow-2xl flex flex-col md:flex-row items-center gap-10 border border-gray-100">
+              <motion.div
+                className="w-full md:w-1/3 hidden md:flex justify-center items-center"
+                initial={{ opacity: 0, x: -40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.5 }}
+              >
+                <div className="flex justify-center items-center">
+                  <div className="relative w-[220px] h-[220px] sm:w-[260px] sm:h-[260px]">
+                    <div className="w-full h-full rounded-2xl overflow-hidden shadow-2xl border border-gray-700/40">
+                      <TiltedCard
+                        imageSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1-p91wykF52aYIBzdmSb53lXSqmFNJjCi84UOkIk0KhLIjJRMsG9EyB1G&s=10"
+                        imageClassName="object-cover w-full h-full"
+                        customWrapperClass="w-full h-full"
+                        backgroundElement={null}
+                        containerHeight="100%"
+                        containerWidth="100%"
+                        imageHeight="100%"
+                        imageWidth="100%"
+                        rotateAmplitude={10}
+                        scaleOnHover={1.03}
+                        showTooltip={false}
+                        displayOverlayContent={false}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
 
               <motion.div
                 className="w-full md:w-2/3 p-6"
@@ -133,7 +132,7 @@ const Contact = () => {
                 <h3 className="text-2xl text-orange-500 font-bold mb-2">
                   Get In Touch
                 </h3>
-                <p className="text-gray-300">
+                <p className="text-gray-300 mb-2">
                   Feel free to reach out if you'd like to collaborate. You are
                   just a few clicks away!
                 </p>

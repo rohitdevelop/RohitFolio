@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import ProjectsText from "../ProjectSec/ProjectsText";
 import { motion } from "framer-motion";
 import {
@@ -64,7 +64,29 @@ const ALL_PROJECTS = [
     codeLink: "https://github.com/rohitdevelop",
     image:
       "https://miro.medium.com/0*NKb54QipseUId6h8", 
-    tags: ["Lenis", "GSAP", "smooth scroll"],
+    tags: ["react", "copy", "TailwindCss"],
+  },
+  {
+    id: 6,
+    title: "User Dhasboard",
+    category: "Express",
+    description: "Register User Dhasboard Uploaded Images.",
+    link: "https://users-dhasboard.onrender.com/",
+    codeLink: "https://github.com/rohitdevelop/USER_PROJECT",
+    image: "https://dapth.com/getmedia/ffa242d9-a7e3-4b4b-8def-511f889e4d60/What_is_UI_Cover_02.jpg",
+  
+    tags: ["Express", "Mongodb", "Ejs"],
+  },
+  {
+    id: 7,
+    title: "Landng pages",
+    category: "Next.js",
+    description: "Shadcn ui compony landing page.",
+    link: "https://webestica.vercel.app/",
+    codeLink: "https://github.com/rohitdevelop/webestica",
+    image:     "https://graphite-production.lon1.cdn.digitaloceanspaces.com/Services-images/Design-services/UX-UI-design-at-Graphite.jpg" ,
+   
+    tags: ["nextjs", "Shadcn", "motion"],
   },
  
 ];
