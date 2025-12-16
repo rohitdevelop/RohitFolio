@@ -91,7 +91,7 @@ const Contact = () => {
             Contact <span className="text-white">Me</span>
           </h1>
           <div className="flex items-center justify-center w-full px-5 py-12 text-center">
-            <div className="bg-gray-900/40 backdrop-blur-xl w-full max-w-4xl  rounded-3xl md:py-9 md:px-6 shadow-2xl flex flex-col md:flex-row items-center gap-10 border border-gray-100">
+            <div className="bg-gray-900/40 backdrop-blur-xl w-full max-w-4xl  rounded-3xl md:py-9 md:px-6 shadow-2xl flex flex-col md:flex-row items-center gap-10 border border-gray-600/50">
               <motion.div
                 className="w-full md:w-1/3 hidden md:flex justify-center items-center"
                 initial={{ opacity: 0, x: -40 }}
