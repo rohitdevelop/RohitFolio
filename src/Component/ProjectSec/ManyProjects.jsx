@@ -88,6 +88,16 @@ const ALL_PROJECTS = [
    
     tags: ["nextjs", "Shadcn", "motion"],
   },
+  {
+    id: 8,
+    title: "Snake Game",
+    category: "JavaScript",
+    description: "Snake game for kids.",
+    link: "https://snake-game-omega-lake.vercel.app/",
+    codeLink: "https://github.com/rohitdevelop/snake_game",
+    image:  "https://www.classicgame.com/uploaded/game/screenshot/snake-game-800.webp",  
+    tags: ["Html", "CSS", "JavaScript"],
+  },
  
 ];
 
