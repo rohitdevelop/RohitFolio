@@ -98,6 +98,16 @@ const ALL_PROJECTS = [
     image:  "https://www.classicgame.com/uploaded/game/screenshot/snake-game-800.webp",  
     tags: ["Html", "CSS", "JavaScript"],
   },
+  {
+    id: 9,
+    title: "Photo Edit",
+    category: "JavaScript",
+    description: "Edit photos by your own app.",
+    link: "https://editor-app-three.vercel.app/",
+    codeLink: "https://github.com/rohitdevelop/editor-app",
+    image:"https://tidbits.com/uploads/2018/07/Photos-before-after-bw.jpg" ,
+    tags: ["Html", "CSS", "JavaScript"],
+  },
  
 ];
 
