@@ -108,6 +108,26 @@ const ALL_PROJECTS = [
     image:"https://tidbits.com/uploads/2018/07/Photos-before-after-bw.jpg" ,
     tags: ["Html", "CSS", "JavaScript"],
   },
+  {
+    id: 10,
+    title: "Qize app",
+    category: "Laravel",
+    description: "Learn with fun solve questions using Qize app.",
+    link: "https://quiz-app-1-o0e7.onrender.com/",
+    codeLink: "https://github.com/rohitdevelop/quiz_app",
+    image:"https://media.geeksforgeeks.org/wp-content/uploads/20250127101906800664/Screenshot-2025-01-27-101843.png" ,
+    tags: ["PHP", "Laravel", "SQL"],
+  },
+  {
+    id: 11,
+    title: "Chat app",
+    category: "JavaScript",
+    description: "chat with devlopers for your network.",
+    link: "https://chat-app-gamma-sand.vercel.app/",
+    codeLink: "https://github.com/rohitdevelop/chat_app",
+    image:"https://s3-alpha.figma.com/hub/file/2610778840/5e9eddd9-5736-4945-9f55-20136583dc94-cover.png",
+    tags: ["nextjs", "Socket.io", "OAuth"],
+  },
  
 ];
 
