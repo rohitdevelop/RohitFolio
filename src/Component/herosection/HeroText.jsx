@@ -63,7 +63,8 @@ const HeroText = () => {
         <button
           onClick={() =>
             window.open(
-              "https://drive.google.com/file/d/1VIAcH6dm_KdumsY0sFgh0ctmllCXRraO/view?usp=drive_link",
+              // "https://drive.google.com/file/d/1VIAcH6dm_KdumsY0sFgh0ctmllCXRraO/view?usp=drive_link",
+              "https://drive.google.com/file/d/1y0hUKEw4XspcXYxmUuFtAtXrcvP8i2W0/view?usp=sharing",
               "_blank"
             )
           }
