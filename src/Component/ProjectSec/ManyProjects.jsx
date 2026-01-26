@@ -128,6 +128,16 @@ const ALL_PROJECTS = [
     image:"https://s3-alpha.figma.com/hub/file/2610778840/5e9eddd9-5736-4945-9f55-20136583dc94-cover.png",
     tags: ["nextjs", "Socket.io", "OAuth"],
   },
+  {
+    id: 12,
+    title: "Jeopardy Game",
+    category: "react",
+    description: "Built with React and animated UI for smooth gameplay.",
+    link: "https://fea-game-7rk2.vercel.app/",
+    codeLink: "https://github.com/rohitdevelop/FEA_Game",
+    image:"https://variety.com/wp-content/uploads/2023/07/Main-Menu.png",
+    tags: ["react.js", "animation", "Aceternity UI"],
+  },
  
 ];
 

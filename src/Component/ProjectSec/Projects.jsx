@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectsText from "./ProjectsText";
 import mern from "../images/websitelogo.png";
+import Webora from "../images/Weboraapp.png";
 import { Link } from "react-router-dom";
 
 const projects = [
@@ -18,16 +19,16 @@ const projects = [
     about: "React project with backend for authentication, quiz game, and AI chatbot.",
   },
   {
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkEd4kOcRb1JJc0ahiRo0wsH9nmYB14oSWFA&amp;usqp=CAU",
-    title: "EcoShop E-Commerce",
+    image: "https://png.pngtree.com/background/20230626/original/pngtree-three-dimensional-shopping-cart-picture-image_4057129.jpg" ,
+     title: "EcoShop E-Commerce",
     link: "https://ecoshop-front-mn3k.vercel.app/",
     about: "Next.js project with backend integration and Clerk authentication.",
   },
   {
-    image: "https://variety.com/wp-content/uploads/2023/07/Main-Menu.png",
-    title: "Jeopardy Game",
-    link: "https://fea-game-7rk2.vercel.app/",
-    about: "Built with React, Tailwind, and animated UI for smooth gameplay.",
+    image: Webora,
+    title: "Webora app",
+    link: "https://choose-web-app-g4r5.vercel.app/",
+    about: "Built with Next, Ts, and Mongodb and smooth UI.",
   },
 ];
 
