@@ -3,13 +3,12 @@ import ProjectCard from "./ProjectCard";
 import ProjectsText from "./ProjectsText";
 import mern from "../images/websitelogo.png";
 import Webora from "../images/Weboraapp.png";
-import task from "../images/task-manager.png";
+import task from "../images/task.png";
 import ArventoChrono from "../images/arventochrono.png";
-import { Link } from "react-router-dom";
-
+ 
 const projects = [
   {
-    image: task,
+     image:task,
     title: "Task Manager App",
     link: "https://copy-paste-app.vercel.app/",
     about: "Created a Task Manager App using React, Tailwind CSS, and Redux with smooth UI and state management.",
