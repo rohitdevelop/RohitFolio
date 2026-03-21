@@ -3,11 +3,13 @@ import ProjectCard from "./ProjectCard";
 import ProjectsText from "./ProjectsText";
 import mern from "../images/websitelogo.png";
 import Webora from "../images/Weboraapp.png";
+import task from "../images/task-manager.png";
+import ArventoChrono from "../images/arventochrono.png";
 import { Link } from "react-router-dom";
 
 const projects = [
   {
-    image: "https://strapi.dhiwise.com/uploads/react_copy_to_clipboard_OG_Image_b7dc8db284.png",
+    image: task,
     title: "Task Manager App",
     link: "https://copy-paste-app.vercel.app/",
     about: "Created a Task Manager App using React, Tailwind CSS, and Redux with smooth UI and state management.",
@@ -19,10 +21,10 @@ const projects = [
     about: "React project with backend for authentication, quiz game, and AI chatbot.",
   },
   {
-    image: "https://png.pngtree.com/background/20230626/original/pngtree-three-dimensional-shopping-cart-picture-image_4057129.jpg" ,
-     title: "EcoShop E-Commerce",
-    link: "https://ecoshop-front-mn3k.vercel.app/",
-    about: "Next.js project with backend integration and Clerk authentication.",
+    image:   ArventoChrono,
+     title: "ArventoChrono E-Commerce",
+    link: "https://wacth-out.vercel.app/",
+    about: "Next.js project with express,mongodb backend integration .",
   },
   {
     image: Webora,

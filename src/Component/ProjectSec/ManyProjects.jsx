@@ -50,9 +50,7 @@ const ALL_PROJECTS = [
     description: "photo Scrolling landing page.",
     link: "https://scrolling-effect-zeta.vercel.app/",
     codeLink: " https://github.com/rohitdevelop/scrolling-effect",
-    image:
-      "https://orpetron.com/wp-content/uploads/2023/12/Screenshot-2023-12-16-095700.png",
-
+    image:"https://images.ctfassets.net/jzzgtonmw9s6/39YQbTjGUllqIba7ppQJNr/2e1db603db89fa35150a812316d8b036/Screenshot_2023-07-09_at_7.14.05_PM.png",
     tags: ["Lenis", "GSAP", "smooth scroll"],
   },
   {
@@ -62,8 +60,7 @@ const ALL_PROJECTS = [
     description: "Genrator password in text and numbers.",
     link: "https://react-calculater-two.vercel.app/",
     codeLink: "https://github.com/rohitdevelop",
-    image:
-      "https://miro.medium.com/0*NKb54QipseUId6h8", 
+    image: "https://miro.medium.com/0*NKb54QipseUId6h8",
     tags: ["react", "copy", "TailwindCss"],
   },
   {
@@ -73,8 +70,9 @@ const ALL_PROJECTS = [
     description: "Register User Dhasboard Uploaded Images.",
     link: "https://users-dhasboard.onrender.com/",
     codeLink: "https://github.com/rohitdevelop/USER_PROJECT",
-    image: "https://dapth.com/getmedia/ffa242d9-a7e3-4b4b-8def-511f889e4d60/What_is_UI_Cover_02.jpg",
-  
+    image:
+      "https://dapth.com/getmedia/ffa242d9-a7e3-4b4b-8def-511f889e4d60/What_is_UI_Cover_02.jpg",
+
     tags: ["Express", "Mongodb", "Ejs"],
   },
   {
@@ -84,8 +82,9 @@ const ALL_PROJECTS = [
     description: "Shadcn ui compony landing page.",
     link: "https://webestica.vercel.app/",
     codeLink: "https://github.com/rohitdevelop/webestica",
-    image:     "https://graphite-production.lon1.cdn.digitaloceanspaces.com/Services-images/Design-services/UX-UI-design-at-Graphite.jpg" ,
-   
+    image:
+      "https://graphite-production.lon1.cdn.digitaloceanspaces.com/Services-images/Design-services/UX-UI-design-at-Graphite.jpg",
+
     tags: ["nextjs", "Shadcn", "motion"],
   },
   {
@@ -95,7 +94,8 @@ const ALL_PROJECTS = [
     description: "Snake game for kids.",
     link: "https://snake-game-omega-lake.vercel.app/",
     codeLink: "https://github.com/rohitdevelop/snake_game",
-    image:  "https://www.classicgame.com/uploaded/game/screenshot/snake-game-800.webp",  
+    image:
+      "https://www.classicgame.com/uploaded/game/screenshot/snake-game-800.webp",
     tags: ["Html", "CSS", "JavaScript"],
   },
   {
@@ -105,7 +105,7 @@ const ALL_PROJECTS = [
     description: "Edit photos by your own app.",
     link: "https://editor-app-three.vercel.app/",
     codeLink: "https://github.com/rohitdevelop/editor-app",
-    image:"https://tidbits.com/uploads/2018/07/Photos-before-after-bw.jpg" ,
+    image: "https://tidbits.com/uploads/2018/07/Photos-before-after-bw.jpg",
     tags: ["Html", "CSS", "JavaScript"],
   },
   {
@@ -115,7 +115,8 @@ const ALL_PROJECTS = [
     description: "Learn with fun solve questions using Qize app.",
     link: "https://quiz-app-1-o0e7.onrender.com/",
     codeLink: "https://github.com/rohitdevelop/quiz_app",
-    image:"https://media.geeksforgeeks.org/wp-content/uploads/20250127101906800664/Screenshot-2025-01-27-101843.png" ,
+    image:
+      "https://media.geeksforgeeks.org/wp-content/uploads/20250127101906800664/Screenshot-2025-01-27-101843.png",
     tags: ["PHP", "Laravel", "SQL"],
   },
   {
@@ -125,7 +126,8 @@ const ALL_PROJECTS = [
     description: "chat with devlopers for your network.",
     link: "https://chat-app-gamma-sand.vercel.app/",
     codeLink: "https://github.com/rohitdevelop/chat_app",
-    image:"https://s3-alpha.figma.com/hub/file/2610778840/5e9eddd9-5736-4945-9f55-20136583dc94-cover.png",
+    image:
+      "https://s3-alpha.figma.com/hub/file/2610778840/5e9eddd9-5736-4945-9f55-20136583dc94-cover.png",
     tags: ["nextjs", "Socket.io", "OAuth"],
   },
   {
@@ -135,10 +137,21 @@ const ALL_PROJECTS = [
     description: "Built with React and animated UI for smooth gameplay.",
     link: "https://fea-game-7rk2.vercel.app/",
     codeLink: "https://github.com/rohitdevelop/FEA_Game",
-    image:"https://variety.com/wp-content/uploads/2023/07/Main-Menu.png",
+    image: "https://variety.com/wp-content/uploads/2023/07/Main-Menu.png",
     tags: ["react.js", "animation", "Aceternity UI"],
   },
- 
+  {
+    id: 13,
+    title: "EchoShop app",
+    category: "next.js",
+    description:
+      "Next.js project with backend integration and Clerk authentication.",
+    link: "https://ecoshop-front-mn3k.vercel.app/",
+    codeLink: "https://github.com/rohitdevelop/Ecoshop_front",
+    image:
+      "https://png.pngtree.com/background/20230626/original/pngtree-three-dimensional-shopping-cart-picture-image_4057129.jpg",
+    tags: ["next.js", "clerk", "API"],
+  },
 ];
 
 const ManyProjects = () => {
