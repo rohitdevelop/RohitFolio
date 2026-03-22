@@ -5,7 +5,7 @@ import React from "react";
 
 const Textinfo = () => {
   return (
-  <div className="flex flex-col text-left gap-6 px-4 ">
+  <div className="flex flex-col text-left gap-6">
   {/* Data array including the button configuration as the last item */}
   {[
     { heading: "I'm Rohit Singh", subHeading: "MERN Stack Developer" },
