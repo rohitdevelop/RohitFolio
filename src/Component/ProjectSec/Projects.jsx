@@ -28,7 +28,7 @@ const projects = [
   {
     image: Webora,
     title: "Webora app",
-    link: "https://choose-web-app-g4r5.vercel.app/",
+    link: "https://choose-web-app-w1fq.vercel.app",
     about: "Built with Next, Ts, and Mongodb and smooth UI.",
   },
 ];
